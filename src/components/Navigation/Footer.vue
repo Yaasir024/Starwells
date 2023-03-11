@@ -4,7 +4,7 @@
       <div class="mb-6">
         <img src="@/assets/logo/orange.svg" alt="" class="" />
       </div>
-      <div class="flex flex-col xs:flex-row">
+      <div class="flex flex-col sm:flex-row">
         <ul class="mr-[50px] xl:mr-[70px] mb-6 xs:mb-0">
           <li class="link mb-[8px]">
             <span class="text-alpha-black">Features</span>

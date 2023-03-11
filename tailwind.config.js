@@ -15,7 +15,8 @@ module.exports = {
         'main-color': '#2F2B43',
         'red-dark': '#442A2A',
         'alpha-black': '#2F2B4399',
-        'primary-50': '#F6F6F8'
+        'primary-50': '#F6F6F8',
+        'primary-900': '#2F2B43'
       },
       flex: {
         '25%': '0 0 25%',
