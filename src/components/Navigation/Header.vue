@@ -9,11 +9,13 @@ const showMobileNav = ref(false)
 <template>
   <header class="bg-white flex items-center justify-between h-[80px] px-[75px] xl:px-[112px]">
     <div class="flex items-center">
-      <img src="@/assets/logo/orange.svg" alt="" class="" />
+      <RouterLink to="/">
+        <img src="@/assets/logo/orange.svg" alt="" class="" />
+      </RouterLink>
       <nav class="hidden lg:block ml-[41px]">
         <ul class="flex items-center">
           <li class="link mr-[32px]">
-            <RouterLink to="/home">
+            <RouterLink to="/">
               <span class="">Home</span>
             </RouterLink>
           </li>

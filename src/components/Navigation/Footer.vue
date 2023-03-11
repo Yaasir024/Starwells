@@ -4,7 +4,9 @@
       class="bg-white px-[35px] lg:px-[60px] xl:px-[120px] py-[48px] block md:flex justify-between"
     >
       <div class="mb-6">
-        <img src="@/assets/logo/orange.svg" alt="" class="" />
+        <RouterLink to="/">
+          <img src="@/assets/logo/orange.svg" alt="" class="" />
+        </RouterLink>
       </div>
       <div class="flex flex-col sm:flex-row">
         <ul class="mr-[50px] xl:mr-[70px] mb-6 xs:mb-0">
@@ -12,17 +14,17 @@
             <span class="text-alpha-black">Features</span>
           </li>
           <li class="link mb-[8px]">
-            <RouterLink to="/home">
+            <RouterLink to="/">
               <span class="text-black">Invoice</span>
             </RouterLink>
           </li>
           <li class="link mb-[8px]">
-            <RouterLink to="/home">
+            <RouterLink to="/">
               <span class="text-black">Accounting</span>
             </RouterLink>
           </li>
           <li class="link mb-[8px]">
-            <RouterLink to="/home">
+            <RouterLink to="/">
               <span class="text-black">Book Keeping</span>
             </RouterLink>
           </li>
@@ -33,22 +35,22 @@
             <span class="text-alpha-black">Categories</span>
           </li>
           <li class="link mb-[8px]">
-            <RouterLink to="/home">
+            <RouterLink to="/pricing">
               <span class="text-black">Pricing</span>
             </RouterLink>
           </li>
           <li class="link mb-[8px]">
-            <RouterLink to="/home">
+            <RouterLink to="/">
               <span class="text-black">Support</span>
             </RouterLink>
           </li>
           <li class="link mb-[8px]">
-            <RouterLink to="/home">
+            <RouterLink to="/">
               <span class="text-black">Blog</span>
             </RouterLink>
           </li>
           <li class="link mb-[8px]">
-            <RouterLink to="/home">
+            <RouterLink to="/">
               <span class="text-black">Appsumo</span>
             </RouterLink>
           </li>
@@ -59,7 +61,7 @@
             <span class="text-alpha-black">Company</span>
           </li>
           <li class="link mb-[8px]">
-            <RouterLink to="/home">
+            <RouterLink to="/">
               <span class="text-black">About Us</span>
             </RouterLink>
           </li>
@@ -85,7 +87,7 @@
             </RouterLink>
           </li>
           <li class="link mb-[8px]">
-            <RouterLink to="/home">
+            <RouterLink to="/">
               <span class="text-black">Privacy</span>
             </RouterLink>
           </li>
