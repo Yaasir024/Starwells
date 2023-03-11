@@ -1,11 +1,11 @@
 <template>
-  <footer class="bg-white px-[120px]">
-    <div class="py-[48px] flex justify-between">
-      <div class="">
+  <footer class="">
+    <div class="bg-white px-[35px] lg:px-[60px] xl:px-[120px] py-[48px] block md:flex justify-between">
+      <div class="mb-6">
         <img src="@/assets/logo/orange.svg" alt="" class="" />
       </div>
-      <div class="flex">
-        <ul class="w-[180px]">
+      <div class="flex flex-col xs:flex-row">
+        <ul class="mr-[50px] xl:mr-[70px] mb-6 xs:mb-0">
           <li class="link mb-[8px]">
             <span class="text-alpha-black">Features</span>
           </li>
@@ -26,7 +26,7 @@
           </li>
         </ul>
         <!--  -->
-        <ul class="w-[180px]">
+        <ul class="mr-[50px] xl:mr-[70px] mb-6 xs:mb-0">
           <li class="link mb-[8px]">
             <span class="text-alpha-black">Categories</span>
           </li>
@@ -52,7 +52,7 @@
           </li>
         </ul>
         <!--  -->
-        <ul class="w-[180px]">
+        <ul class="mr-[50px] xl:mr-[70px] mb-6 xs:mb-0">
           <li class="link mb-[8px]">
             <span class="text-alpha-black">Company</span>
           </li>
@@ -62,7 +62,7 @@
             </RouterLink>
           </li>
           <li class="link mb-[8px]">
-            <RouterLink to="/home">
+            <RouterLink to="/contact-us">
               <span class="text-black">Contact</span>
             </RouterLink>
           </li>
@@ -73,7 +73,7 @@
           </li>
         </ul>
         <!--  -->
-        <ul class="w-[180px]">
+        <ul class="w-[100px] lg:w-[180px] mb-6 xs:mb-0">
           <li class="link mb-[8px]">
             <span class="text-alpha-black">Legal</span>
           </li>
@@ -90,12 +90,11 @@
         </ul>
       </div>
     </div>
+    <div class="py-[24px] bg-primary-50"></div>
   </footer>
 </template>
 
-
 <style scoped>
-
 .link span {
   font-weight: 500;
   font-size: 16px;

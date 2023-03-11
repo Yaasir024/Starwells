@@ -9,7 +9,7 @@
       </div>
     </div>
     <div class="mt-[56px] flex flex-wrap">
-      <div class="flex-full md:flex-50% xl:flex-33.33% px-[12px] mb-4">
+      <div class="flex-full md:flex-50% xl:flex-33.33% px-[12px] mb-5">
         <div class="card-white p-[24px]">
           <button class="icon-head flex items-center justify-center">
             <img src="@/assets/icons/pricing/flash-black.svg" alt="" class="" />
@@ -89,7 +89,7 @@
           </div>
         </div>
       </div>
-      <div class="flex-full md:flex-50% xl:flex-33.33% px-[12px] mb-4">
+      <div class="flex-full md:flex-50% xl:flex-33.33% px-[12px] mb-5">
         <div class="card-gradient p-[24px]">
           <div class="flex items-center justify-between">
             <button class="icon-head flex items-center justify-center">
@@ -172,7 +172,7 @@
           </div>
         </div>
       </div>
-      <div class="flex-full md:flex-50% xl:flex-33.33% px-[12px] mb-4">
+      <div class="flex-full md:flex-50% xl:flex-33.33% px-[12px] mb-5">
         <div class="card-white p-[24px]">
           <button class="icon-head flex items-center justify-center">
             <img src="@/assets/icons/pricing/india.svg" alt="" class="" />
@@ -255,20 +255,20 @@
     </div>
     <div class="mt-[114px]">
       <div class="flex flex-wrap">
-        <div class="flex-33.33% flex flex-col items-center justify-center px-[12px]">
+        <div class="flex-full sm:flex-50% lg:flex-33.33% flex flex-col items-center justify-center px-[12px] mb-5">
             <img src="@/assets/icons/pricing/client-coloured.svg" alt="" class="" />
             <h1 class="text-[20px] leading-[28px] tracking-[-0.014em] font-semibold mt-[26px] text-center">Dedicated Support Team</h1>
-            <p class="text-[16px] text-alpha-black leading-[24px] tracking-[-0.01em] mt-[16px] text-center">Starwells offers dedicated support teams to provide customers with exceptional support.</p>
+            <p class="text-[16px] text-alpha-black leading-[24px] tracking-[-0.01em] mt-[16px] text-center max-w-[380px]">Starwells offers dedicated support teams to provide customers with exceptional support.</p>
         </div>
-        <div class="flex-33.33% flex flex-col items-center justify-center px-[12px]">
+        <div class="flex-full sm:flex-50% lg:flex-33.33% flex flex-col items-center justify-center px-[12px] mb-5">
             <img src="@/assets/icons/pricing/charges-coloured.svg" alt="" class="" />
             <h1 class="text-[20px] leading-[28px] tracking-[-0.014em] font-semibold mt-[26px] text-center">No Hidden Charges</h1>
-            <p class="text-[16px] text-alpha-black leading-[24px] tracking-[-0.01em] mt-[16px] text-center">No sneaky pricing tricks here. You'll have access to everything you need without additional charges.</p>
+            <p class="text-[16px] text-alpha-black leading-[24px] tracking-[-0.01em] mt-[16px] text-center max-w-[380px]">No sneaky pricing tricks here. You'll have access to everything you need without additional charges.</p>
         </div>
-        <div class="flex-33.33% flex flex-col items-center justify-center px-[12px]">
+        <div class="flex-full sm:flex-50% lg:flex-33.33% flex flex-col items-center justify-center px-[12px] mb-5">
             <img src="@/assets/icons/pricing/uptime-coloured.svg" alt="" class="" />
             <h1 class="text-[20px] leading-[28px] tracking-[-0.014em] font-semibold mt-[26px] text-center">99.9% uptime</h1>
-            <p class="text-[16px] text-alpha-black leading-[24px] tracking-[-0.01em] mt-[16px] text-center">We boast of 99.9% uptime, ensuring you can manage your finances without interruptions.</p>
+            <p class="text-[16px] text-alpha-black leading-[24px] tracking-[-0.01em] mt-[16px] text-center max-w-[380px]">We boast of 99.9% uptime, ensuring you can manage your finances without interruptions.</p>
         </div>
       </div>
     </div>
