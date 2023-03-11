@@ -1,5 +1,5 @@
 <template>
-  <section class="pt-[100px] px-[120px]">
+  <section class="pt-[100px] px-[35px]  lg:px-[60px] xl:px-[120px]">
     <div class="flex items-center justify-center">
       <div class="btns-container">
         <button class="btn monthly active">
@@ -9,7 +9,7 @@
       </div>
     </div>
     <div class="mt-[56px] flex flex-wrap">
-      <div class="flex-33.33% px-[12px]">
+      <div class="flex-full md:flex-50% xl:flex-33.33% px-[12px] mb-4">
         <div class="card-white p-[24px]">
           <button class="icon-head flex items-center justify-center">
             <img src="@/assets/icons/pricing/flash-black.svg" alt="" class="" />
@@ -89,7 +89,7 @@
           </div>
         </div>
       </div>
-      <div class="flex-33.33% px-[12px]">
+      <div class="flex-full md:flex-50% xl:flex-33.33% px-[12px] mb-4">
         <div class="card-gradient p-[24px]">
           <div class="flex items-center justify-between">
             <button class="icon-head flex items-center justify-center">
@@ -172,7 +172,7 @@
           </div>
         </div>
       </div>
-      <div class="flex-33.33% px-[12px]">
+      <div class="flex-full md:flex-50% xl:flex-33.33% px-[12px] mb-4">
         <div class="card-white p-[24px]">
           <button class="icon-head flex items-center justify-center">
             <img src="@/assets/icons/pricing/india.svg" alt="" class="" />
