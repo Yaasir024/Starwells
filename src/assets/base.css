@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "Sharp Grotesk";
+  src: url("./fonts/SharpGrotesk-Medium20.otf") format("opentype"), url("./fonts/SharpGrotesk-Medium25.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
 *,
 *::before,
 *::after {

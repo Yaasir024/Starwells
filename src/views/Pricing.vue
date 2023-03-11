@@ -1,3 +1,9 @@
+<script setup>
+import Hero from "@/components/Pricing/Hero.vue";
+</script>
+
 <template>
-    PRICING
+    <div class="">
+        <Hero />
+    </div>
 </template>

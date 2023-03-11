@@ -1,12 +1,17 @@
 <script setup>
+import { ref, onMounted } from 'vue'
+
+import MobileNav from '@/components/Navigation/MobileNav.vue'
 import GradientBtn from '@/components/Buttons/GradientBtn.vue'
+
+const showMobileNav = ref(false)
 </script>
 
 <template>
-  <header class="bg-white flex items-center justify-between h-[80px] px-[112px]">
+  <header class="bg-white flex items-center justify-between h-[80px] px-[75px] xl:px-[112px]">
     <div class="flex items-center">
       <img src="@/assets/logo/orange.svg" alt="" class="" />
-      <nav class="ml-[41px]">
+      <nav class="hidden lg:block ml-[41px]">
         <ul class="flex items-center">
           <li class="link mr-[32px]">
             <RouterLink to="/home">
@@ -48,9 +53,14 @@ import GradientBtn from '@/components/Buttons/GradientBtn.vue'
           <span class="">Login</span>
         </RouterLink>
       </div>
-      <RouterLink to="/">
-        <GradientBtn text="Register" />
-      </RouterLink>
+      <div class="hidden lg:block">
+        <RouterLink to="/">
+          <GradientBtn text="Register" />
+        </RouterLink>
+      </div>
+      <div class="block lg:hidden cursor-pointer">
+        <img src="@/assets/icons/hamburger.svg" alt="" class="h-[24px] w-[24px]" />
+      </div>
     </div>
   </header>
 </template>
@@ -62,5 +72,16 @@ import GradientBtn from '@/components/Buttons/GradientBtn.vue'
   line-height: 24px;
 
   color: #667085;
+}
+
+/* Nav Animation */
+.nav-enter-active,
+.nav-leave-active {
+  transition: all 0.4s ease;
+}
+.nav-enter-from,
+.nav-leave-to {
+  opacity: 0;
+  transform: translateX(100%);
 }
 </style>
