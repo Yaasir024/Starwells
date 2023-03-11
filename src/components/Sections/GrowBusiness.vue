@@ -2,7 +2,7 @@
   <section class="px-[35px] lg:px-[60px] xl:px-[120px]">
     <div class="section flex flex-col md:flex-row justify-between overflow-hidden">
       <div class="py-[48px] pl-[48px] pr-[20px]">
-        <h1 class="text-[32px] xl:text-[48px] leading-[38px] xl:leading-[54px] tracking-[-0.02em] max-w-[480px]">
+        <h1 class="text-[32px] xl:text-[48px] leading-[38px] xl:leading-[54px] tracking-[-0.02em] font-sharp max-w-[480px]">
           Grow your business with Starwells
         </h1>
         <h3

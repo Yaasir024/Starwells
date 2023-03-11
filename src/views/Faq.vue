@@ -1,6 +1,6 @@
 <script setup>
-import Hero from '@/components/Terms/Hero.vue'
-import Main from '@/components/Terms/Main.vue'
+import Hero from '@/components/Faq/Hero.vue'
+import Main from '@/components/Faq/Main.vue'
 import GrowBusiness from '@/components/Sections/GrowBusiness.vue'
 </script>
 
@@ -8,7 +8,7 @@ import GrowBusiness from '@/components/Sections/GrowBusiness.vue'
   <div class="">
     <Hero />
     <Main />
-    <div class="mt-[220px] mb-[160px]">
+    <div class="mt-[215px] mb-[160px]">
       <GrowBusiness />
     </div>
   </div>

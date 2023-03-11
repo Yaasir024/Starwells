@@ -1,55 +1,61 @@
+<script setup>
+import { ref, onMounted } from 'vue'
+
+const activeAccordion = ref('1')
+const accordionData = [
+  {
+    id: 1,
+    question: 'Can I use for free?',
+    answer: 'Yes you can use Starwells for free as we provide 14 days free trial period.'
+  },
+  {
+    id: 2,
+    question: 'Can we pay offline?',
+    answer: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni, ea!'
+  },
+  {
+    id: 3,
+    question: 'Do I get free updates?',
+    answer: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni, ea!'
+  },
+  {
+    id: 4,
+    question: 'Appsumo life time deal?',
+    answer: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni, ea!'
+  }
+]
+
+const toggleAccordion = (id) => {
+  if (activeAccordion.value == '' || id != activeAccordion.value) {
+    activeAccordion.value = id
+  } else {
+    activeAccordion.value = ''
+  }
+}
+</script>
+
 <template>
-  <section class="pt-[42px] px-[20px] sm:px-[35px] lg:px-[60px] xl:px-[120px] pb-[120px]">
-    <div class="text-[20px] text-black leading-[32px]">
-      <span class="text-[25px] font-bold">Welcome to Starwells!</span>
-      <br>
-      <p class="">
-        These terms and conditions outline the rules and regulations for the use of Starwells’s
-        Website, located at Starwells.in.
-      </p>
-      <p class="">
-        By accessing this website we assume you accept these terms and conditions. Do not continue
-        to use Starwells if you do not agree to take all of the terms and conditions stated on this
-        page.
-      </p>
-      <p class="">
-        The following terminology applies to these Terms and Conditions, Privacy Statement and
-        Disclaimer Notice and all Agreements: "Client", "You" and "Your" refers to you, the person
-        log on this website and compliant to the Company’s terms and conditions. "The Company",
-        "Ourselves", "We", "Our" and "Us", refers to our Company. "Party", "Parties", or "Us",
-        refers to both the Client and ourselves. All terms refer to the offer, acceptance and
-        consideration of payment necessary to undertake the process of our assistance to the Client
-        in the most appropriate manner for the express purpose of meeting the Client’s needs in
-        respect of provision of the Company’s stated services, in accordance with and subject to,
-        prevailing law of Netherlands. Any use of the above terminology or other words in the
-        singular, plural, capitalization and/or he/she or they, are taken as interchangeable and
-        therefore as referring to same.
-      </p>
-      <span class="text-[25px] font-bold">Cookies</span>
-      <p class="">
-        We employ the use of cookies. By accessing Gobills, you agreed to use cookies in agreement
-        with the Gobills's Privacy Policy.
-      </p>
-      <p class="">
-        Most interactive websites use cookies to let us retrieve the user’s details for each visit.
-        Cookies are used by our website to enable the functionality of certain areas to make it
-        easier for people visiting our website. Some of our affiliate/advertising partners may also
-        use cookies.
-      </p>
-      <span class="text-[25px] font-bold">License</span>
-      <p class="">
-        Unless otherwise stated, Gobills and/or its licensors own the intellectual property rights
-        for all material on Gobills. All intellectual property rights are reserved. You may access
-        this from Gobills for your own personal use subjected to restrictions set in these terms and
-        conditions.
-      </p>
-      <span class="text-[25px] font-bold">You must not:</span>
-      <ul class="list pl-[22px]">
-        <li class="">Republish material from Starwells</li>
-        <li class="">Sell, rent or sub-license material from Starwells</li>
-        <li class="">Reproduce, duplicate or copy material from Starwells</li>
-        <li class="">Redistribute content from Starwells</li>
-      </ul>
+  <section class="pt-[115px] px-[20px] sm:px-[35px] lg:px-[60px] xl:px-[120px] pb-[120px]">
+    <div class="max-w-[780px] mx-auto px-4">
+      <div
+        class="accordion-item border-b border-[#E4E7EC] mb-[20px] overflow-hidden"
+        v-for="data in accordionData"
+        :key="data.id"
+      >
+        <div class="flex items-center justify-between h-[50px]" @click="toggleAccordion(data.id)">
+          <h2 class="text-[24px] leading-[30px] text-gray-900">{{ data.question }}</h2>
+          <button class="">
+            <img src="@/assets/icons/minus.svg" alt="" class="" v-if="activeAccordion == data.id"/>
+            <img src="@/assets/icons/plus.svg" alt="" class="" v-if="activeAccordion != data.id"/>
+          </button>
+        </div>
+        <div
+          class="text-[16px] leading-[24px] text-[#667085] overflow-hidden transition-all duration-200 ease-in"
+          :class="activeAccordion == data.id ? 'max-h-[200px] pb-[32px]' : 'max-h-0'"
+        >
+          {{ data.answer }}
+        </div>
+      </div>
     </div>
   </section>
 </template>

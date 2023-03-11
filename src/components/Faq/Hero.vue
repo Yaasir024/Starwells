@@ -1,8 +1,8 @@
 <template>
   <section class="hero pt-[144px] pb-[170px]">
-    <div class="flex flex-col items-center">
-      <div class="">
-        <h1 class="text-[64px] font-medium font-sharp leading-[72px] text-center">
+    <div class="">
+      <div class="flex flex-col items-center justify-center">
+        <h1 class="text-[64px] font-medium font-sharp leading-[72px] text-center max-w-[790px]">
           FAQ (Frequently Questions Asked)
         </h1>
         <p class="text-[20px] leading-[28px] mt-[24px] text-center max-w-[580px]">
