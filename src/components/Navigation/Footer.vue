@@ -69,7 +69,7 @@
             </RouterLink>
           </li>
           <li class="link mb-[8px]">
-            <RouterLink to="/home">
+            <RouterLink to="/faq">
               <span class="text-black">FAQ</span>
             </RouterLink>
           </li>
