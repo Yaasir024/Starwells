@@ -31,6 +31,6 @@
 .hero {
   background-image: url(./../../assets/images/pricing/hero-bg.png);
   background-repeat: no-repeat;
-  /* background-size: contain; */
+  background-size: cover;
 }
 </style>

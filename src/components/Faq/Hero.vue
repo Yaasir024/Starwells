@@ -1,6 +1,6 @@
 <template>
   <section class="hero pt-[144px] pb-[170px]">
-    <div class="">
+    <div class="text-white">
       <div class="flex flex-col items-center justify-center">
         <h1 class="text-[64px] font-medium font-sharp leading-[72px] text-center max-w-[790px]">
           FAQ (Frequently Questions Asked)
@@ -16,8 +16,8 @@
 
 <style scoped>
 .hero {
-  background-image: url(./../../assets/images/pricing/hero-bg.png);
+  background-image: url(./../../assets/images/faq/hero-bg.png);
   background-repeat: no-repeat;
-  /* background-size: contain; */
+  background-size: cover;
 }
 </style>

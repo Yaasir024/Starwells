@@ -1,8 +1,10 @@
 <script setup>
-
+import PoweredBusiness from '@/components/Home/PoweredBusiness.vue'
 </script>
 
 <template>
   
-  <main>HOME VEIW</main>
+  <main>
+    <PoweredBusiness />
+  </main>
 </template>

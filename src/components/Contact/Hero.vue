@@ -63,9 +63,9 @@
 
 <style scoped>
 .hero {
-  background-image: url(./../../assets/images/pricing/hero-bg.png);
+  background-image: url(./../../assets/images/contact/hero-bg.png);
   background-repeat: no-repeat;
-  /* background-size: contain; */
+  background-size: cover;
 }
 
 .contact-card {
