@@ -1,6 +1,8 @@
 <template>
   <footer class="">
-    <div class="bg-white px-[35px] lg:px-[60px] xl:px-[120px] py-[48px] block md:flex justify-between">
+    <div
+      class="bg-white px-[35px] lg:px-[60px] xl:px-[120px] py-[48px] block md:flex justify-between"
+    >
       <div class="mb-6">
         <img src="@/assets/logo/orange.svg" alt="" class="" />
       </div>
@@ -78,7 +80,7 @@
             <span class="text-alpha-black">Legal</span>
           </li>
           <li class="link mb-[8px]">
-            <RouterLink to="/home">
+            <RouterLink to="/terms-of-service">
               <span class="text-black">Terms of Use</span>
             </RouterLink>
           </li>
@@ -90,7 +92,24 @@
         </ul>
       </div>
     </div>
-    <div class="py-[24px] bg-primary-50"></div>
+    <div
+      class="px-[35px] lg:px-[60px] xl:px-[120px] py-[24px] bg-primary-50 flex items-center justify-between"
+    >
+      <p class="text-[16px] leading-[24px] text-alpha-black/60">
+        Starwells. All right reserved. © 2023
+      </p>
+      <div class="flex items-center">
+        <a href="#" target="_blank" rel="noopener noreferrer" class="mr-[16px]">
+          <img src="@/assets/icons/social/facebook.svg" alt="" />
+        </a>
+        <a href="#" target="_blank" rel="noopener noreferrer" class="mr-[16px]">
+          <img src="@/assets/icons/social/twitter.svg" alt="" />
+        </a>
+        <a href="#" target="_blank" rel="noopener noreferrer" class="">
+          <img src="@/assets/icons/social/github.svg" alt="" class="" />
+        </a>
+      </div>
+    </div>
   </footer>
 </template>
 
