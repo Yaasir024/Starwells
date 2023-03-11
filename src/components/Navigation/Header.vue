@@ -1,7 +1,6 @@
 <script setup>
 import { ref, onMounted } from 'vue'
 
-import MobileNav from '@/components/Navigation/MobileNav.vue'
 import GradientBtn from '@/components/Buttons/GradientBtn.vue'
 
 const showMobileNav = ref(false)
