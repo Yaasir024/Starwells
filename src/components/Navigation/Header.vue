@@ -97,11 +97,6 @@ useClickOutside(aboutMenu, () => {
               <span class="">Pricing</span>
             </RouterLink>
           </li>
-          <li class="link mr-[32px]">
-            <RouterLink to="/">
-              <span class="">Partner Program</span>
-            </RouterLink>
-          </li>
         </ul>
       </nav>
     </div>

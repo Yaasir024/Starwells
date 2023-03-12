@@ -109,11 +109,6 @@ const toggleMenu = (val) => {
           <span class="">Pricing</span>
         </RouterLink>
       </li>
-      <li class="link h-[50px] border-b flex items-center">
-        <RouterLink to="/" @click="$emit('close')">
-          <span class="">Partner Program</span>
-        </RouterLink>
-      </li>
     </ul>
   </div>
 </template>
