@@ -63,7 +63,8 @@
 
 <style scoped>
 .hero {
-  background-image: url(./../../assets/images/contact/hero-bg.png);
+  /* background-image: url(./../../assets/images/contact/hero-bg.png); */
+  background-image: url(./../../../public/images/hero/contact.svg);
   background-repeat: no-repeat;
   background-size: cover;
 }

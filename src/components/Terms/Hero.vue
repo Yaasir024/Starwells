@@ -16,7 +16,8 @@
 
 <style scoped>
 .hero {
-  background-image: url(./../../assets/images/terms/hero-bg.png);
+  /* background-image: url(./../../assets/images/terms/hero-bg.png); */
+  background-image: url(./../../../public/images/hero/terms.svg);
   background-repeat: no-repeat;
   background-size: cover;
 }
