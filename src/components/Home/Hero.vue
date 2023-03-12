@@ -1,7 +1,7 @@
 <template>
-  <section class="hero px-[20px] sm:px-[35px] lg:px-[60px] xl:px-[120px]">
+  <section class="hero px-[20px] sm:px-[35px] lg:px-[60px] xl:px-[120px] max-h-[100vh]">
     <div class="flex justify-between">
-      <div class="flex flex-col md:shrink-0 pt-[102px] md:mr-[87px]">
+      <div class="flex flex-col xl:shrink-0 pt-[102px] md:mr-[87px]">
         <a href="#" target="_blank" rel="noopener noreferrer">
           <div class="badge-container px-[10px] py-[6px] flex items-center w-fit">
             <button
@@ -22,7 +22,9 @@
         >
           We make big accounting tasks feel smaller
         </h1>
-        <h2 class="text-[18px] sm:text-[20px] leading-[26px] sm:leading-[30px] text-[#E8EAEF] mt-[24px] max-w-[560px]">
+        <h2
+          class="text-[18px] sm:text-[20px] leading-[26px] sm:leading-[30px] text-[#E8EAEF] mt-[24px] max-w-[560px]"
+        >
           Starwells is one-stop accounting software to manage your estimates, invoices, inventory,
           and much more.
         </h2>
@@ -50,14 +52,61 @@
           </div>
         </div>
       </div>
-      <div class="hidden md:block">
-        <img src="@/assets/images/home/hero.png" alt="" class="" />
+      <div class="hidden xl:flex carousel">
+        <div class="overflow-hidden max-w-[265px] mr-[24px]">
+          <div class="marq">
+            <img src="@/assets/images/home/animation/01.png" alt="" class="mb-[16px]" />
+            <img src="@/assets/images/home/animation/02.png" alt="" class="mb-[18px]" />
+            <img src="@/assets/images/home/animation/03.png" alt="" class="mb-[15px]" />
+            <img src="@/assets/images/home/animation/04.png" alt="" class="mb-[15px]" />
+          </div>
+          <div class="marq">
+            <img src="@/assets/images/home/animation/01.png" alt="" class="mb-[16px]" />
+            <img src="@/assets/images/home/animation/02.png" alt="" class="mb-[18px]" />
+            <img src="@/assets/images/home/animation/03.png" alt="" class="mb-[15px]" />
+            <img src="@/assets/images/home/animation/04.png" alt="" class="mb-[15px]" />
+          </div>
+        </div>
+        <div class="overflow-hidden max-w-[265px]">
+          <div class="marq2">
+            <img src="@/assets/images/home/animation/05.png" alt="" class="mb-[16px]" />
+            <img src="@/assets/images/home/animation/06.png" alt="" class="mb-[18px]" />
+            <img src="@/assets/images/home/animation/07.png" alt="" class="mb-[15px]" />
+          </div>
+          <div class="marq2">
+            <img src="@/assets/images/home/animation/05.png" alt="" class="mb-[16px]" />
+            <img src="@/assets/images/home/animation/06.png" alt="" class="mb-[18px]" />
+            <img src="@/assets/images/home/animation/07.png" alt="" class="mb-[15px]" />
+          </div>
+        </div>
+        <!-- <img src="@/assets/images/home/hero.png" alt="" class="" /> -->
       </div>
     </div>
   </section>
 </template>
 
 <style scoped>
+.carousel:hover .marq {
+  animation-play-state: paused;
+}
+.carousel:hover .marq2 {
+  animation-play-state: paused;
+}
+.marq {
+  animation: marquee 8s linear infinite;
+}
+.marq2 {
+  animation: marquee 10s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
 .hero {
   background-image: url(./../../assets/images/home/hero-bg.png);
   background-repeat: no-repeat;

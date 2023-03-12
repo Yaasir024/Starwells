@@ -1,7 +1,7 @@
 <template>
   <section class="flex bg-[#D9F6FF]">
     <div
-      class="flex-full lg:flex-50% pl-[20px] sm:pl-[35px] lg:pl-[60px] xl:pl-[120px] pt-[102px] pb-[70px] pr-[90px]"
+      class="flex-full lg:flex-50% pl-[20px] sm:pl-[35px] lg:pl-[60px] xl:pl-[120px] pt-[102px] pb-[70px] pr-[20px] sm:pr-[35px] lg:pr-[90px]"
     >
       <div class="">
         <div class="badge w-fit">
@@ -10,11 +10,13 @@
           </button>
         </div>
         <h2
-          class="text-[45px] md:text-[64px] leading-[52px] md:leading-[72px] tracking-[-0.015em] font-medium font-sharp text-dark mt-[30px] max-w-[560px]"
+          class="text-[32px] sm:text-[45px] md:text-[64px] leading-[42px] sm:leading-[52px] md:leading-[72px] tracking-[-0.015em] font-medium font-sharp text-dark mt-[30px] max-w-[560px]"
         >
           Experience Hassle-Free Bookkeeping
         </h2>
-        <h4 class="text-[20px] leading-[30px] text-dark mt-[24px] max-w-[560px]">
+        <h4
+          class="text-[18px] sm:text-[20px] leading-[26px] sm:leading-[30px] text-dark mt-[24px] max-w-[560px]"
+        >
           Starwells helps business owner to keep their book easy. Business owners don't need to
           waste time on calculating profit, loss, per customer, and many more.
         </h4>

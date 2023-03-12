@@ -95,7 +95,7 @@
       </div>
     </div>
     <div
-      class="px-[35px] lg:px-[60px] xl:px-[120px] py-[24px] bg-primary-50 flex items-center justify-between"
+      class="px-[35px] lg:px-[60px] xl:px-[120px] py-[24px] bg-primary-50 sm:flex items-center justify-between"
     >
       <p class="text-[16px] leading-[24px] text-alpha-black/60">
         Starwells. All right reserved. © 2023

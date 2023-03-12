@@ -1,7 +1,7 @@
 <template>
   <section class="bg-white pt-[180px] px-[20px] sm:px-[35px] lg:px-[60px] xl:px-[120px] pb-[70px]">
     <div class="flex flex-col md:flex-row">
-      <div class="mr-[75px] lg:mr-[100px] xl:mr-[140px] order-2 md:order-1">
+      <div class="md:mr-[75px] lg:mr-[100px] xl:mr-[140px] order-2 md:order-1">
         <div class="">
           <div
             class="relative text-[52px] xl:text-[67px] leading-[82px] font-sharp text-red-dark bg-[#FFDBBD] rounded-[6px] px-[9px] w-fit"

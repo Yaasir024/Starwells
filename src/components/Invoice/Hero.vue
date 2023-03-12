@@ -1,6 +1,6 @@
 <template>
   <section class="flex bg-[#FFEDD9] ">
-    <div class="flex-full lg:flex-50% pl-[20px] sm:pl-[35px] lg:pl-[60px] xl:pl-[120px] pt-[102px] pb-[70px] pr-[90px]">
+    <div class="flex-full lg:flex-50% pl-[20px] sm:pl-[35px] lg:pl-[60px] xl:pl-[120px] pt-[102px] pb-[70px] pr-[20px] sm:pr-[35px] lg:pr-[90px]">
       <div class="">
         <div class="badge w-fit">
           <button class="bg-[#EDEDF1] px-[8px] rounded-[20px]">
@@ -8,11 +8,11 @@
           </button>
         </div>
         <h2
-          class="text-[45px] md:text-[64px] leading-[52px] md:leading-[72px] tracking-[-0.015em] font-medium font-sharp text-dark mt-[30px] max-w-[560px]"
+          class="text-[32px] sm:text-[45px] md:text-[64px] leading-[42px] sm:leading-[52px] md:leading-[72px] tracking-[-0.015em] font-medium font-sharp text-dark mt-[30px] max-w-[560px]"
         >
           Get paid faster with Starwells
         </h2>
-        <h4 class="text-[20px] leading-[30px] text-dark mt-[24px] max-w-[560px]">
+        <h4 class="text-[18px] sm:text-[20px] leading-[26px] sm:leading-[30px] text-dark mt-[24px] max-w-[560px]">
           Starwells provide the benefits of a full billing and accounting solution to small and
           medium businesses.
         </h4>
