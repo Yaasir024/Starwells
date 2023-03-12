@@ -42,13 +42,13 @@ const toggleMenu = (val) => {
           <span class="">Home</span>
         </RouterLink>
       </li>
-      <li class="link border-b">
+      <li class="link-lg border-b">
         <div
           class="flex items-center justify-between cursor-pointer h-[50px]"
           @click="toggleMenu('features')"
         >
           <span class="mr-[13px]">Features</span>
-          <img src="@/assets/icons/dropdown.svg" alt="" class="" />
+          <img src="@/assets/icons/dropdown.svg" alt="" class="" :class="activeMenu == 'features' ? 'rotate-180' : ''" />
         </div>
         <div
           class="overflow-hidden transition-all duration-200 ease-in"
@@ -57,29 +57,39 @@ const toggleMenu = (val) => {
           <ul class="pl-4">
             <li class="link mb-[8px]">
               <RouterLink to="/invoicing" @click="$emit('close')">
-                <span class="text-black">Invoicing</span>
+                <div class="flex items-center">
+                  <img src="@/assets/icons/nav/invoicing.svg" alt="" class="mr-3" />
+
+                  <span class="text-black">Invoicing</span>
+                </div>
               </RouterLink>
             </li>
             <li class="link mb-[8px]">
               <RouterLink to="/accounting" @click="$emit('close')">
-                <span class="text-black">Accounting</span>
+                <div class="flex items-center">
+                  <img src="@/assets/icons/nav/accounting.svg" alt="" class="mr-3" />
+                  <span class="text-black">Accounting</span>
+                </div>
               </RouterLink>
             </li>
             <li class="link mb-[8px]">
               <RouterLink to="/book-keeping" @click="$emit('close')">
-                <span class="text-black">Book Keeping</span>
+                <div class="flex items-center">
+                  <img src="@/assets/icons/nav/book.svg" alt="" class="mr-3" />
+                  <span class="text-black">Book Keeping</span>
+                </div>
               </RouterLink>
             </li>
           </ul>
         </div>
       </li>
-      <li class="link border-b">
+      <li class="link-lg border-b">
         <div
           class="flex items-center justify-between cursor-pointer h-[50px]"
           @click="toggleMenu('about')"
         >
           <span class="mr-[13px]">About</span>
-          <img src="@/assets/icons/dropdown.svg" alt="" class="" />
+          <img src="@/assets/icons/dropdown.svg" alt="" class="" :class="activeMenu == 'about' ? 'rotate-180' : ''" />
         </div>
         <div
           class="overflow-hidden transition-all duration-200 ease-in"
@@ -88,17 +98,26 @@ const toggleMenu = (val) => {
           <ul class="pl-4">
             <li class="link mb-[8px]">
               <RouterLink to="/about" @click="$emit('close')">
-                <span class="text-black">About Us</span>
+                <div class="flex items-center">
+                  <img src="@/assets/icons/nav/about.svg" alt="" class="mr-3" />
+                  <span class="text-black">About Us</span>
+                </div>
               </RouterLink>
             </li>
             <li class="link mb-[8px]">
               <RouterLink to="/contact-us" @click="$emit('close')">
-                <span class="text-black">Contact</span>
+                <div class="flex items-center">
+                  <img src="@/assets/icons/nav/contact.svg" alt="" class="mr-3" />
+                  <span class="text-black">Contact</span>
+                </div>
               </RouterLink>
             </li>
             <li class="link mb-[8px]">
               <RouterLink to="/faq" @click="$emit('close')">
-                <span class="text-black">FAQ</span>
+                <div class="flex items-center">
+                  <img src="@/assets/icons/nav/faq.svg" alt="" class="mr-3" />
+                  <span class="text-black">FAQ</span>
+                </div>
               </RouterLink>
             </li>
           </ul>
@@ -114,11 +133,20 @@ const toggleMenu = (val) => {
 </template>
 
 <style scoped>
-.link span {
+.link-lg, .link span {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
 
   color: #667085;
+  transition: all 0.3s ease;
+}
+.link-lg img {
+  transition: all 0.3s ease;
+}
+
+
+.link:hover span {
+  color: #ff3a31;
 }
 </style>

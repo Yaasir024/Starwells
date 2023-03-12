@@ -1,5 +1,5 @@
 <template>
-  <section class="hero pt-[88px] pl-[20px] sm:pl-[35px] lg:pl-[60px] xl:pl-[120px]">
+  <section class="hero pt-[120px] pl-[20px] sm:pl-[35px] lg:pl-[60px] xl:pl-[120px]">
     <div class="flex">
       <div class="lg:shrink-0 pb-[200px]">
         <button
