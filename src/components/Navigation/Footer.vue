@@ -32,7 +32,7 @@
         <!--  -->
         <ul class="mr-[50px] xl:mr-[70px] mb-6 xs:mb-0">
           <li class="link mb-[8px]">
-            <span class="text-alpha-black">Categories</span>
+            <span class="text-alpha-black">Resources</span>
           </li>
           <li class="link mb-[8px]">
             <RouterLink to="/pricing">
@@ -82,7 +82,7 @@
             <span class="text-alpha-black">Legal</span>
           </li>
           <li class="link mb-[8px]">
-            <RouterLink to="/terms-of-service">
+            <RouterLink to="/terms-of-use">
               <span class="text-black">Terms of Use</span>
             </RouterLink>
           </li>

@@ -110,6 +110,11 @@ useClickOutside(aboutMenu, () => {
   line-height: 24px;
 
   color: #667085;
+  transition: all .3s ease;
+}
+
+.link:hover span {
+  color: #FF3A31;
 }
 
 /* Nav Animation */
