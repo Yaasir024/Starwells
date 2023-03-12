@@ -15,9 +15,9 @@
       </h2>
     </div>
     <div class="mt-[84px]">
-      <div class="flex flex-wrap">
-        <div class="flex-full md:flex-50% px-[12px] mb-[80px]">
-          <div class="card-white active pt-[48px] pl-[32px] lg:pl-[48px] overflow-hidden">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-y-5">
+        <div class="px-[12px] mb-[80px] max-h-[840px] h-full">
+          <div class="card-white active pt-[48px] pl-[32px] lg:pl-[48px] overflow-hidden h-full">
             <div class="pr-[32px] mb-[66px]">
               <img
                 src="@/assets/images/home/why/icon-invoice.svg"
@@ -40,8 +40,8 @@
           </div>
         </div>
         <!--  -->
-        <div class="flex-full md:flex-50% px-[12px] mb-[80px]">
-          <div class="card-white pt-[48px] pl-[32px] lg:pl-[48px] overflow-hidden">
+        <div class="px-[12px] mb-[80px] max-h-[840px] h-full">
+          <div class="card-white pt-[48px] pl-[32px] lg:pl-[48px] overflow-hidden h-full">
             <div class="pr-[32px] mb-[66px]">
               <img
                 src="@/assets/images/home/why/icon-billing.svg"
@@ -64,8 +64,8 @@
           </div>
         </div>
         <!--  -->
-        <div class="flex-full md:flex-50% px-[12px] mb-[80px]">
-          <div class="card-white pt-[48px] pl-[32px] lg:pl-[48px] overflow-hidden">
+        <div class="px-[12px] mb-[80px] max-h-[640px] h-full">
+          <div class="card-white pt-[48px] pl-[32px] lg:pl-[48px] overflow-hidden h-full">
             <div class="pr-[32px] mb-[66px]">
               <img
                 src="@/assets/images/home/why/icon-analytics.svg"
@@ -87,8 +87,8 @@
           </div>
         </div>
         <!--  -->
-        <div class="flex-full md:flex-50% px-[12px] mb-[80px]">
-          <div class="card-white pt-[48px] pl-[32px] lg:pl-[48px] overflow-hidden">
+        <div class="px-[12px] mb-[80px] max-h-[640px] h-full">
+          <div class="card-white pt-[48px] pl-[32px] lg:pl-[48px] overflow-hidden h-full">
             <div class="pr-[32px] mb-[66px]">
               <img src="@/assets/images/home/why/icon-book.svg" alt="" class="h-[64px] w-[64px]" />
               <h2

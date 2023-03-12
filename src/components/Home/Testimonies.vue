@@ -33,7 +33,7 @@ const prevSlide = () => {
       class="block md:flex justify-between items-end pr-[20px] sm:pr-[35px] lg:pr-[60px] xl:pr-[120px] mb-[64px]"
     >
       <div class="">
-        <h2 class="text-[48px] leading-[54px] tracking-[-0.02em] font-sharp text-white text-center">
+        <h2 class="text-[32px] sm:text-[48px] leading-[42px] sm:leading-[54px] tracking-[-0.02em] font-sharp text-white ">
           What people are saying.
         </h2>
         <h2
