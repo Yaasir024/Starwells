@@ -3,12 +3,12 @@
     <div class="flex flex-col items-center justify-center">
       <button class="gradient-badge text-white py-[6px] px-[8px]">Why Starwells</button>
       <h2
-        class="text-[48px] leading-[54px] tracking-[-0.02em] text-primary-900 text-center mt-[32px]"
+        class="text-[48px] leading-[54px] tracking-[-0.02em] text-primary-900 font-sharp text-center mt-[32px]"
       >
         See the bigger picture with us
       </h2>
       <h2
-        class="text-[18px] leading-[26px] tracking-[-0.012em] text-alpha-black/60 text-center mt-[24px] max-w-[580px]"
+        class="text-[18px] leading-[26px] tracking-[-0.012em] text-alpha-black/60 font-sharp text-center mt-[24px] max-w-[580px]"
       >
         Starwells provide the benefits of a full billing and accounting solution to small and medium
         businesses.
