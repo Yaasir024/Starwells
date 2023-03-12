@@ -7,7 +7,7 @@
         </div>
         <div class="flex-full md:flex-50% pl-[20px] lg:pl-[50px] xl:pl-[100px]">
           <h2
-            class="text-[36px] lg:text-[48px] leading-[42px] lg:leading-[54px] tracking-[-0.02em] font-semibold text-primary-900 mt-[30px] max-w-[480px] mb-[24px]"
+            class="text-[36px] lg:text-[48px] leading-[42px] lg:leading-[54px] tracking-[-0.02em] font-semibold font-sharp text-primary-900 mt-[30px] max-w-[480px] mb-[24px]"
           >
             Effortless Inventory Management
           </h2>
@@ -48,7 +48,7 @@
         </div>
         <div class="flex-full md:flex-50% pl-[20px] lg:pl-[50px] xl:pl-[100px] order-2 md:order-1">
           <h2
-            class="text-[36px] lg:text-[48px] leading-[42px] lg:leading-[54px] tracking-[-0.02em] font-semibold text-primary-900 mt-[30px] max-w-[480px] mb-[24px]"
+            class="text-[36px] lg:text-[48px] leading-[42px] lg:leading-[54px] tracking-[-0.02em] font-semibold font-sharp text-primary-900 mt-[30px] max-w-[480px] mb-[24px]"
           >
             Transaction Analytics Made Easy
           </h2>
