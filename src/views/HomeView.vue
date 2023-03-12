@@ -14,7 +14,7 @@ import GrowBusiness from '@/components/Sections/GrowBusiness.vue'
     <Statistics />
     <Why />
     <Testimonies />
-    <div class="mt-[220px] mb-[160px]">
+    <div class="mt-[170px] mb-[160px]">
       <GrowBusiness />
     </div>
   </main>

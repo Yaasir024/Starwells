@@ -1,5 +1,5 @@
 <template>
-  <section class="pt-[105px] px-[20px] sm:px-[35px] lg:px-[60px] xl:px-[120px] pb-[120px]">
+  <section class="pt-[105px] px-[20px] sm:px-[35px] lg:px-[60px] xl:px-[120px]">
     <div class="">
       <div class="flex flex-wrap mb-[100px]">
         <div class="flex-full md:flex-50% md:pr-[20px] lg:pr-[50px] xl:pr-[100px]">

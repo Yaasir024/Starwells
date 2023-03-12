@@ -1,11 +1,11 @@
 <template>
   <section class="">
-    <div class="hero pt-[114px] pb-[380px] flex flex-col items-center">
+    <div class="hero pt-[114px] pb-[380px] flex flex-col items-center px-4">
       <div class="px-4">
-        <h1 class="text-[64px] font-medium font-sharp leading-[72px] text-center">
+        <h1 class="text-[50px] md:text-[64px] font-medium font-sharp leading-[72px] text-center">
           We are here to help
         </h1>
-        <p class="text-[20px] leading-[28px] mt-[24px] text-center max-w-[580px]">
+        <p class="text-[18px] md:text-[20px] leading-[28px] mt-[24px] text-center max-w-[580px]">
           Starwells team is working round the clock to provide you the accounting and billing
           software
         </p>

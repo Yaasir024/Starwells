@@ -1,11 +1,11 @@
 <template>
-  <section class="hero pt-[144px] pb-[30px]">
+  <section class="hero pt-[144px] pb-[30px] px-4">
     <div class="flex flex-col items-center">
       <div class="">
-        <h1 class="text-[64px] font-medium font-sharp leading-[72px] text-center">
+        <h1 class="text-[50px] md:text-[64px] font-medium font-sharp leading-[72px] text-center">
           Pricing & Plans
         </h1>
-        <p class="text-[20px] leading-[28px] mt-[24px] text-center">
+        <p class="text-[18px] md:text-[20px] leading-[28px] mt-[24px] text-center">
           <span class="block">Starwells comes with affordable pricing.</span>
           <span class="block"
             >Use <span class="font-bold">WELCOME10</span> Coupon Code to get extra 10%

@@ -8,7 +8,7 @@ import GrowBusiness from '@/components/Sections/GrowBusiness.vue'
   <div class="">
     <Hero />
     <Main />
-    <div class="mt-[220px] mb-[160px]">
+    <div class="mt-[170px] mb-[160px]">
       <GrowBusiness />
     </div>
   </div>
