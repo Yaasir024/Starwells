@@ -1,5 +1,5 @@
 <template>
-  <section class="hero px-[20px] sm:px-[35px] lg:px-[60px] xl:px-[120px] max-h-[calc(100vh_+_40px)]">
+  <section class="hero px-[20px] sm:px-[35px] lg:px-[60px] xl:px-[120px] max-h-[750px]">
     <div class="flex justify-between">
       <div class="flex flex-col xl:shrink-0 pt-[102px] md:mr-[87px]">
         <a href="#" target="_blank" rel="noopener noreferrer">
