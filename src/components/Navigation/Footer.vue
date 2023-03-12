@@ -14,17 +14,17 @@
             <span class="text-alpha-black">Features</span>
           </li>
           <li class="link mb-[8px]">
-            <RouterLink to="/">
+            <RouterLink to="/invoice">
               <span class="text-black">Invoice</span>
             </RouterLink>
           </li>
           <li class="link mb-[8px]">
-            <RouterLink to="/">
+            <RouterLink to="/accounting">
               <span class="text-black">Accounting</span>
             </RouterLink>
           </li>
           <li class="link mb-[8px]">
-            <RouterLink to="/">
+            <RouterLink to="/book-keeping">
               <span class="text-black">Book Keeping</span>
             </RouterLink>
           </li>
