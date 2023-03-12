@@ -20,7 +20,7 @@
           <div class="card-white active pt-[48px] pl-[32px] lg:pl-[48px] overflow-hidden">
             <div class="pr-[32px] mb-[66px]">
               <img
-                src="@/assets/images/home/why/icon-invoice.png"
+                src="@/assets/images/home/why/icon-invoice.svg"
                 alt=""
                 class="h-[64px] w-[64px]"
               />
@@ -44,7 +44,7 @@
           <div class="card-white pt-[48px] pl-[32px] lg:pl-[48px] overflow-hidden">
             <div class="pr-[32px] mb-[66px]">
               <img
-                src="@/assets/images/home/why/icon-billing.png"
+                src="@/assets/images/home/why/icon-billing.svg"
                 alt=""
                 class="h-[64px] w-[64px]"
               />
@@ -68,7 +68,7 @@
           <div class="card-white pt-[48px] pl-[32px] lg:pl-[48px] overflow-hidden">
             <div class="pr-[32px] mb-[66px]">
               <img
-                src="@/assets/images/home/why/icon-analytics.png"
+                src="@/assets/images/home/why/icon-analytics.svg"
                 alt=""
                 class="h-[64px] w-[64px]"
               />
@@ -90,7 +90,7 @@
         <div class="flex-full md:flex-50% px-[12px] mb-[80px]">
           <div class="card-white pt-[48px] pl-[32px] lg:pl-[48px] overflow-hidden">
             <div class="pr-[32px] mb-[66px]">
-              <img src="@/assets/images/home/why/icon-book.png" alt="" class="h-[64px] w-[64px]" />
+              <img src="@/assets/images/home/why/icon-book.svg" alt="" class="h-[64px] w-[64px]" />
               <h2
                 class="text-[24px] leading-[32px] tracking-[-0.016em] font-medium font-sharp text-primary-900 mt-[24px]"
               >

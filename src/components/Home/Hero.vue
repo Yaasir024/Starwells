@@ -112,7 +112,7 @@
 }
 .hero {
   /* background-image: url(./../../assets/images/home/hero-bg.png); */
-  background-image: url(./../../assets/images/home/home.svg);
+  background-image: url(./../../../public/images/hero/home.svg);
   background-repeat: no-repeat;
   background-size: cover;
 }
