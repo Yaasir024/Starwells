@@ -1,6 +1,8 @@
 <script setup>
 import { ref, onMounted } from 'vue'
 
+import { useClickOutside } from "@/composables/useClickOutside";
+
 import MobileNav from '@/components/Navigation/MobileNav.vue'
 import FeaturesMenu from '@/components/Navigation/FeaturesMenu.vue'
 import AboutMenu from '@/components/Navigation/AboutMenu.vue'
@@ -9,11 +11,18 @@ import GradientBtn from '@/components/Buttons/GradientBtn.vue'
 
 const showMobileNav = ref(false)
 
-const showFeaturesMenu = ref(false)
 const featureMenu = ref(null)
+const showFeaturesMenu = ref(false)
+useClickOutside(featureMenu, () => {
+  showFeaturesMenu.value = false;
+});
 
-const showAboutMenu = ref(false)
+
 const aboutMenu = ref(null)
+const showAboutMenu = ref(false)
+useClickOutside(aboutMenu, () => {
+  showAboutMenu.value = false;
+});
 </script>
 
 <template>
