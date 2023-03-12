@@ -56,7 +56,23 @@ const router = createRouter({
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: () => import('../views/Invoice.vue')
-    }
+    },
+    {
+      path: '/accounting',
+      name: 'accounting',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('../views/Accounting.vue')
+    },
+    {
+      path: '/book-keeping',
+      name: 'book-keeping',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('../views/BookKeeping.vue')
+    },
   ],
   scrollBehavior(to, from, savedPosition) {
     // always scroll to top
