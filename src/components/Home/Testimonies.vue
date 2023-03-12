@@ -10,26 +10,8 @@ import 'swiper/css'
 let swipfunc = null
 const onSwiper = (swiper) => {
   swipfunc = swiper
-  console.log(swiper)
 }
-const onSlideChange = () => {
-  console.log('slide change')
-}
-
-// const isFirst = computed(() => {
-//   if (swipfunc.activeIndex > 0) {
-//     return false
-//   } else {
-//     return true
-//   }
-// })
-// const isLast = computed(() => {
-//   if (swipfunc.activeIndex < swipfunc.slides.length - 1) {
-//     return false
-//   } else {
-//     return true
-//   }
-// })
+const onSlideChange = () => {}
 
 const nextSlide = () => {
   if (swipfunc.activeIndex < swipfunc.slides.length - 1) {
@@ -38,7 +20,6 @@ const nextSlide = () => {
 }
 const prevSlide = () => {
   if (swipfunc.activeIndex > 0) {
-
     swipfunc.slidePrev()
   }
 }
@@ -106,7 +87,9 @@ const prevSlide = () => {
               </h1>
               <div class="mt-[31px]">
                 <h1 class="gradient-text text-[25px] leading-[25px] font-sharp">Mark Hoffman</h1>
-                <h3 class="mt-[7px] text-[15px] leading-[16px] font-sharp text-white">Group Accountant</h3>
+                <h3 class="mt-[7px] text-[15px] leading-[16px] font-sharp text-white">
+                  Group Accountant
+                </h3>
               </div>
             </div>
           </div>
