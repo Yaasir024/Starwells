@@ -1,13 +1,17 @@
 <script setup>
 import { ref, onMounted } from 'vue'
 
+import MobileNav from '@/components/Navigation/MobileNav.vue'
+
 import GradientBtn from '@/components/Buttons/GradientBtn.vue'
 
 const showMobileNav = ref(false)
 </script>
 
 <template>
-  <header class="bg-white flex items-center justify-between h-[80px] px-[75px] xl:px-[112px]">
+  <header
+    class="bg-white flex items-center justify-between h-[80px] px-[20px] sm:px-[45px] md:px-[75px] xl:px-[112px]"
+  >
     <div class="flex items-center">
       <RouterLink to="/">
         <img src="@/assets/logo/orange.svg" alt="" class="" />
@@ -60,9 +64,17 @@ const showMobileNav = ref(false)
         </RouterLink>
       </div>
       <div class="block lg:hidden cursor-pointer">
-        <img src="@/assets/icons/hamburger.svg" alt="" class="h-[24px] w-[24px]" />
+        <img
+          src="@/assets/icons/hamburger.svg"
+          alt=""
+          class="h-[24px] w-[24px]"
+          @click="showMobileNav = true"
+        />
       </div>
     </div>
+    <transition name="nav">
+      <MobileNav @close="showMobileNav = false" v-if="showMobileNav" />
+    </transition>
   </header>
 </template>
 
