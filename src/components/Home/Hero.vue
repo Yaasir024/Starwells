@@ -1,5 +1,5 @@
 <template>
-  <section class="hero px-[20px] sm:px-[35px] lg:px-[60px] xl:px-[120px] max-h-[750px]">
+  <section class="hero px-[20px] sm:px-[35px] lg:px-[60px] xl:px-[120px] pt-[20px] sm:pt-2 max-h-[750px]">
     <div class="flex justify-between">
       <div class="flex flex-col xl:shrink-0 pt-[102px] md:mr-[87px]">
         <a href="#" target="_blank" rel="noopener noreferrer">
@@ -55,7 +55,7 @@
           </div>
         </div>
       </div>
-      <div class="hidden lg:flex marquee-section  gap-x-[24px]">
+      <div class="hidden xl:flex marquee-section  gap-x-[24px]">
         <div class="marquee marquee--vertical">
           <div class="marquee__group">
             <img src="@/assets/images/home/animation/01.png" alt="" class="mb-[16px]" />
@@ -88,6 +88,14 @@
 </template>
 
 <style scoped>
+.hero {
+  /* background-image: url(./../../assets/images/home/hero-bg.png); */
+  background-image: url(./../../../public/images/hero/home.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
 .marquee-section:hover .marquee__group {
   animation-play-state: paused;
 }
@@ -160,62 +168,8 @@
 .carousel:hover .marq2 {
   animation-play-state: paused;
 }
-.marq {
-  /* transform: translateZ(0);
-  animation: marquee 8s linear infinite; */
-}
-.marq2 {
-  /* animation: marquee 10s linear infinite; */
-  /* transform: translateY(0%); */
-}
-.marq2a {
-  /* animation: marquee 10s linear infinite; */
-  /* transform: translateY(0%); */
-  animation: move1 2s ease-in-out infinite;
-  animation-delay: 0s;
-}
-.marq2b {
-  /* animation: marquee 10s linear infinite; */
-  /* transform: translateY(0%); */
-  animation: move2 2s ease-in-out infinite;
-  animation-delay: 1s;
-}
 
-@keyframes move1 {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(200%);
-  }
-}
 
-@keyframes move2 {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(200%);
-  }
-}
-
-@keyframes marquee {
-  0% {
-    transform: translateY(50%);
-  }
-  50% {
-    transform: translateY(-100%);
-  }
-  100% {
-    transform: translateY(50%);
-  }
-}
-.hero {
-  /* background-image: url(./../../assets/images/home/hero-bg.png); */
-  background-image: url(./../../../public/images/hero/home.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 .badge-container {
   background: rgba(255, 255, 255, 0.1);
 

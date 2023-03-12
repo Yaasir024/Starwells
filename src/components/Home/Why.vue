@@ -17,51 +17,55 @@
     <div class="mt-[84px]">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-y-5">
         <div class="px-[12px] mb-[80px] max-h-[840px] h-full">
-          <div class="card-white active pt-[48px] pl-[32px] lg:pl-[48px] overflow-hidden h-full">
-            <div class="pr-[32px] mb-[66px]">
-              <img
-                src="@/assets/images/home/why/icon-invoice.svg"
-                alt=""
-                class="h-[64px] w-[64px]"
-              />
-              <h2
-                class="text-[24px] leading-[32px] tracking-[-0.016em] font-medium font-sharp text-primary-900 mt-[24px]"
-              >
-                Unlimited Invoices & Estimates
-              </h2>
-              <h2
-                class="text-[16px] leading-[24px] tracking-[-0.01em] text-alpha-black/60 mt-[24px] max-w-[500px]"
-              >
-                Save time and avoid late fees on every vendor invoice by streamlining your AP
-                process from purchase order to bank transfer.
-              </h2>
+          <RouterLink to="/invoicing">
+            <div class="card-white active pt-[48px] pl-[32px] lg:pl-[48px] overflow-hidden h-full">
+              <div class="pr-[32px] mb-[66px]">
+                <img
+                  src="@/assets/images/home/why/icon-invoice.svg"
+                  alt=""
+                  class="h-[64px] w-[64px]"
+                />
+                <h2
+                  class="text-[24px] leading-[32px] tracking-[-0.016em] font-medium font-sharp text-primary-900 mt-[24px]"
+                >
+                  Unlimited Invoices & Estimates
+                </h2>
+                <h2
+                  class="text-[16px] leading-[24px] tracking-[-0.01em] text-alpha-black/60 mt-[24px] max-w-[500px]"
+                >
+                  Save time and avoid late fees on every vendor invoice by streamlining your AP
+                  process from purchase order to bank transfer.
+                </h2>
+              </div>
+              <img src="@/assets/images/home/why/invoice.png" alt="" class="" />
             </div>
-            <img src="@/assets/images/home/why/invoice.png" alt="" class="" />
-          </div>
+          </RouterLink>
         </div>
         <!--  -->
         <div class="px-[12px] mb-[80px] max-h-[840px] h-full">
-          <div class="card-white pt-[48px] pl-[32px] lg:pl-[48px] overflow-hidden h-full">
-            <div class="pr-[32px] mb-[66px]">
-              <img
-                src="@/assets/images/home/why/icon-billing.svg"
-                alt=""
-                class="h-[64px] w-[64px]"
-              />
-              <h2
-                class="text-[24px] leading-[32px] tracking-[-0.016em] font-medium font-sharp text-primary-900 mt-[24px]"
-              >
-                Billing and Accounting
-              </h2>
-              <h2
-                class="text-[16px] leading-[24px] tracking-[-0.01em] text-alpha-black/60 mt-[24px] max-w-[500px]"
-              >
-                Eliminate double entry and save hours with custom exports to your favorite
-                accounting systems.
-              </h2>
+          <RouterLink to="/accounting">
+            <div class="card-white pt-[48px] pl-[32px] lg:pl-[48px] overflow-hidden h-full">
+              <div class="pr-[32px] mb-[66px]">
+                <img
+                  src="@/assets/images/home/why/icon-billing.svg"
+                  alt=""
+                  class="h-[64px] w-[64px]"
+                />
+                <h2
+                  class="text-[24px] leading-[32px] tracking-[-0.016em] font-medium font-sharp text-primary-900 mt-[24px]"
+                >
+                  Billing and Accounting
+                </h2>
+                <h2
+                  class="text-[16px] leading-[24px] tracking-[-0.01em] text-alpha-black/60 mt-[24px] max-w-[500px]"
+                >
+                  Eliminate double entry and save hours with custom exports to your favorite
+                  accounting systems.
+                </h2>
+              </div>
+              <img src="@/assets/images/home/why/billing.png" alt="" class="" />
             </div>
-            <img src="@/assets/images/home/why/billing.png" alt="" class="" />
-          </div>
+          </RouterLink>
         </div>
         <!--  -->
         <div class="px-[12px] mb-[80px] max-h-[640px] h-full">
@@ -88,23 +92,29 @@
         </div>
         <!--  -->
         <div class="px-[12px] mb-[80px] max-h-[640px] h-full">
-          <div class="card-white pt-[48px] pl-[32px] lg:pl-[48px] overflow-hidden h-full">
-            <div class="pr-[32px] mb-[66px]">
-              <img src="@/assets/images/home/why/icon-book.svg" alt="" class="h-[64px] w-[64px]" />
-              <h2
-                class="text-[24px] leading-[32px] tracking-[-0.016em] font-medium font-sharp text-primary-900 mt-[24px]"
-              >
-                Full Book-Keeping Suite
-              </h2>
-              <h2
-                class="text-[16px] leading-[24px] tracking-[-0.01em] text-alpha-black/60 mt-[24px] max-w-[500px]"
-              >
-                We’ve combined smart payment methods with even smarter financial software to create
-                the perfect accounting solution.
-              </h2>
+          <RouterLink to="/book-keeping">
+            <div class="card-white pt-[48px] pl-[32px] lg:pl-[48px] overflow-hidden h-full">
+              <div class="pr-[32px] mb-[66px]">
+                <img
+                  src="@/assets/images/home/why/icon-book.svg"
+                  alt=""
+                  class="h-[64px] w-[64px]"
+                />
+                <h2
+                  class="text-[24px] leading-[32px] tracking-[-0.016em] font-medium font-sharp text-primary-900 mt-[24px]"
+                >
+                  Full Book-Keeping Suite
+                </h2>
+                <h2
+                  class="text-[16px] leading-[24px] tracking-[-0.01em] text-alpha-black/60 mt-[24px] max-w-[500px]"
+                >
+                  We’ve combined smart payment methods with even smarter financial software to
+                  create the perfect accounting solution.
+                </h2>
+              </div>
+              <img src="@/assets/images/home/why/book.png" alt="" class="" />
             </div>
-            <img src="@/assets/images/home/why/book.png" alt="" class="" />
-          </div>
+          </RouterLink>
         </div>
       </div>
     </div>
