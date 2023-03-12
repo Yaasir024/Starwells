@@ -1,12 +1,12 @@
 <template>
-  <section class="px-[35px] lg:px-[60px] xl:px-[120px]">
+  <section class="px-[20px] sm:px-[35px] lg:px-[60px] xl:px-[120px]">
     <div class="section flex flex-col md:flex-row justify-between overflow-hidden">
-      <div class="py-[48px] pl-[48px] pr-[20px]">
-        <h1 class="text-[32px] xl:text-[48px] leading-[38px] xl:leading-[54px] tracking-[-0.02em] font-sharp max-w-[480px]">
+      <div class="py-[28px] xs:py-[48px] pl-[20px] xs:pl-[26px] sm:pl-[48px] pr-[20px]">
+        <h1 class="text-[26px] md:text-[32px] xl:text-[48px] leading-[38px] xl:leading-[54px] tracking-[-0.02em] font-sharp max-w-[480px]">
           Grow your business with Starwells
         </h1>
         <h3
-          class="text-[18px] leading-[26px] text-alpha-black tracking-[-0.012em] max-w-[480px] mt-[24px]"
+          class="text-[16px] md:text-[18px] leading-[26px] text-alpha-black tracking-[-0.012em] max-w-[480px] mt-[24px]"
         >
           From online to on-the-go, we have dedicated methods for every type of operational
           accounting. And it’s all tracked and managed in our powerful clou software

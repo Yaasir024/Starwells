@@ -2,12 +2,12 @@
   <section class="pt-[105px] px-[20px] sm:px-[35px] lg:px-[60px] xl:px-[120px] pb-[120px]">
     <div class="">
       <div class="flex flex-wrap mb-[100px]">
-        <div class="flex-full md:flex-50% pr-[20px] lg:pr-[50px] xl:pr-[100px]">
+        <div class="flex-full md:flex-50% md:pr-[20px] lg:pr-[50px] xl:pr-[100px]">
           <img src="@/assets/images/accounting/automated.png" alt="" class="" />
         </div>
-        <div class="flex-full md:flex-50% pl-[20px] lg:pl-[50px] xl:pl-[100px]">
+        <div class="flex-full md:flex-50% md:pl-[20px] lg:pl-[50px] xl:pl-[100px]">
           <h2
-            class="text-[36px] lg:text-[48px] leading-[42px] lg:leading-[54px] tracking-[-0.02em] font-semibold font-sharp text-primary-900 mt-[30px] max-w-[480px] mb-[24px]"
+            class="text-[28px] md:text-[36px] lg:text-[48px] leading-[42px] lg:leading-[54px] tracking-[-0.02em] font-semibold font-sharp text-primary-900 mt-[30px] max-w-[480px] mb-[24px]"
           >
             Automated Data Entry and Accuracy
           </h2>
@@ -44,12 +44,12 @@
       </div>
       <!--  -->
       <div class="flex flex-wrap mb-[100px]">
-        <div class="flex-full md:flex-50% pr-[20px] lg:pr-[50px] xl:pr-[100px] order-1 md:order-2">
+        <div class="flex-full md:flex-50% md:pr-[20px] lg:pr-[50px] xl:pr-[100px] order-1 md:order-2">
           <img src="@/assets/images/accounting/expense.png" alt="" class="" />
         </div>
-        <div class="flex-full md:flex-50% pl-[20px] lg:pl-[50px] xl:pl-[100px] order-2 md:order-1">
+        <div class="flex-full md:flex-50% md:pl-[20px] lg:pl-[50px] xl:pl-[100px] order-2 md:order-1">
           <h2
-            class="text-[36px] lg:text-[48px] leading-[42px] lg:leading-[54px] tracking-[-0.02em] font-semibold font-sharp text-primary-900 mt-[30px] max-w-[480px] mb-[24px]"
+            class="text-[28px] md:text-[36px] lg:text-[48px] leading-[42px] lg:leading-[54px] tracking-[-0.02em] font-semibold font-sharp text-primary-900 mt-[30px] max-w-[480px] mb-[24px]"
           >
             Automated expense categorization
           </h2>
