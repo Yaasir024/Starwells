@@ -40,7 +40,7 @@ const emits = defineEmits(['close'])
                 <h2 class="text-[16px] leading-[26px] tracking-[-0.02em] font-medium text-[#0A112F]">
                     FAQ
                 </h2>
-                <h2 class="text-[16px] leading-[26px] tracking-[-0.02em] text-[#70707A]">Ensure compliance for all your financess</h2>
+                <h2 class="text-[16px] leading-[26px] tracking-[-0.02em] text-[#70707A]">Learn more about Starwells</h2>
               </div>
             </div>
           </RouterLink>

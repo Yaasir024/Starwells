@@ -26,7 +26,7 @@ useClickOutside(aboutMenu, () => {
 
 <template>
   <header
-    class="bg-white flex items-center justify-between h-[80px] px-[20px] sm:px-[45px] md:px-[75px] xl:px-[112px]"
+    class="fixed top-0 left-0 right-0 bg-white flex items-center justify-between h-[80px] px-[20px] sm:px-[45px] md:px-[75px] xl:px-[112px] z-20"
   >
     <div class="flex items-center">
       <RouterLink to="/">
