@@ -58,12 +58,12 @@
             </h3>
           </div>
         </div>
-        <div class="box-02">
+        <div class="box-02 pt-[24px] md:pt-0">
           <div
-            class="bg-red-dark h-full w-full rounded-l-[22px] rounded-tr-[22px] px-[55px] flex items-center justify-end"
+            class="bg-red-dark h-full w-full sm:rounded-l-[22px] rounded-tr-[22px] px-[32px] sm:px-[55px] flex items-center sm:justify-end"
           >
             <h1
-              class="text-[70px] lg:text-[115px] leading-[82px] lg:leading-[132px] font-sharp font-medium text-[#FF8B54]"
+              class="text-[50px] sm:text-[70px] lg:text-[115px] leading-[82px] lg:leading-[132px] font-sharp font-medium text-[#FF8B54]"
             >
               92%
             </h1>
@@ -87,7 +87,7 @@
         </div>
         <div class="box-04">
           <div
-            class="bg-red-dark h-full w-full rounded-b-[22px] py-[38px] px-[14px] flex flex-col justify-end items-center"
+            class="bg-red-dark h-full w-full rounded-b-[22px] pb-[20px] sm:py-[38px] px-[14px] flex flex-col justify-end sm:items-center"
           >
             <h3
               class="text-[20px] lg:text-[24px] leading-[26px] lg:leading-[30px] font-sharp text-[#FF8B54] max-w-[260px]"
@@ -124,18 +124,45 @@
   grid-row: 3 / -1;
 }
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 750px) {
   .gridbox {
-    grid-template-rows: repeat(4, 90px);
+    grid-template-rows: repeat(9, 90px);
+  }
+  .gridbox .box-01 {
+    grid-column: 1 / -1;
+    grid-row: 1 / span 4;
   }
   .gridbox .box-02 {
-    grid-row: 1 / span 1;
+    grid-column: 1 / -1;
+    grid-row: 5 / span 2;
   }
   .gridbox .box-03 {
-  grid-row: 2 / -1;
+    grid-column: 1 / span 4;
+    grid-row: 7 / -1;
+  }
+  .gridbox .box-04 {
+    grid-column: 5 / -1;
+    grid-row: 7 / -1;
+  }
 }
-.gridbox .box-04 {
-  grid-row: 2 / -1;
-}
+@media screen and (max-width: 640px) {
+  .gridbox {
+    grid-template-rows: repeat(7, 90px);
+  }
+  .gridbox .box-01 {
+    grid-row: 1 / span 3;
+  }
+  .gridbox .box-02 {
+    grid-column: 1 / -1;
+    grid-row: 6 / span 1;
+  }
+  .gridbox .box-03 {
+    grid-column: 1 / -1;
+    grid-row: 4 / span 2;
+  }
+  .gridbox .box-04 {
+    grid-column: 1 / -1;
+    grid-row: 7 / span 1;
+  }
 }
 </style>
