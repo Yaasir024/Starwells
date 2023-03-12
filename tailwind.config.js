@@ -6,6 +6,23 @@ module.exports = {
       Inter: ['Inter'],
       sharp: ['Sharp Grotesk']
     },
+    screens: {
+      xs: '600px',
+      sm: '640px',
+      // => @media (min-width: 640px) { ... }
+
+      md: '768px',
+      // => @media (min-width: 768px) { ... }
+
+      lg: '1024px',
+      // => @media (min-width: 1024px) { ... }
+
+      xl: '1280px',
+      // => @media (min-width: 1280px) { ... }
+
+      '2xl': '1536px'
+      // => @media (min-width: 1536px) { ... }
+    },
     extend: {
       boxShadow: {
         '4xl':
@@ -13,8 +30,9 @@ module.exports = {
       },
       colors: {
         'main-color': '#2F2B43',
-        'dark': '#131E3A',
+        dark: '#131E3A',
         'red-dark': '#442A2A',
+        'main-red': '#FF3A31',
         'alpha-black': '#2F2B4399',
         'primary-50': '#F6F6F8',
         'primary-900': '#2F2B43',
