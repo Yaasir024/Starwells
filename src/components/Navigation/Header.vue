@@ -1,7 +1,7 @@
 <script setup>
 import { ref, onMounted } from 'vue'
 
-import { useClickOutside } from "@/composables/useClickOutside";
+import { useClickOutside } from '@/composables/useClickOutside'
 
 import MobileNav from '@/components/Navigation/MobileNav.vue'
 import FeaturesMenu from '@/components/Navigation/FeaturesMenu.vue'
@@ -14,15 +14,14 @@ const showMobileNav = ref(false)
 const featureMenu = ref(null)
 const showFeaturesMenu = ref(false)
 useClickOutside(featureMenu, () => {
-  showFeaturesMenu.value = false;
-});
-
+  showFeaturesMenu.value = false
+})
 
 const aboutMenu = ref(null)
 const showAboutMenu = ref(false)
 useClickOutside(aboutMenu, () => {
-  showAboutMenu.value = false;
-});
+  showAboutMenu.value = false
+})
 </script>
 
 <template>
@@ -46,19 +45,48 @@ useClickOutside(aboutMenu, () => {
               @click="showFeaturesMenu = !showFeaturesMenu"
             >
               <span class="mr-[13px]">Features</span>
-              <img src="@/assets/icons/dropdown.svg" alt="" class="" />
+              <button class="chevron">
+                <svg
+                  width="13"
+                  height="8"
+                  viewBox="0 0 13 8"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1.26196 1.5L6.26196 6.5L11.262 1.5"
+                    stroke="currentColor"
+                    stroke-width="1.67"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
             </div>
             <transition name="menu">
-              <FeaturesMenu v-if="showFeaturesMenu" @close="showFeaturesMenu = false"  />
+              <FeaturesMenu v-if="showFeaturesMenu" @close="showFeaturesMenu = false" />
             </transition>
           </li>
           <li class="link mr-[32px] relative" ref="aboutMenu">
-            <div
-              class="flex items-center cursor-pointer"
-              @click="showAboutMenu = !showAboutMenu"
-            >
+            <div class="flex items-center cursor-pointer" @click="showAboutMenu = !showAboutMenu">
               <span class="mr-[13px]">About</span>
-              <img src="@/assets/icons/dropdown.svg" alt="" class="" />
+              <button class="chevron">
+                <svg
+                  width="13"
+                  height="8"
+                  viewBox="0 0 13 8"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1.26196 1.5L6.26196 6.5L11.262 1.5"
+                    stroke="currentColor"
+                    stroke-width="1.67"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
             </div>
             <transition name="menu">
               <AboutMenu v-if="showAboutMenu" @close="showAboutMenu = false" />
@@ -110,11 +138,20 @@ useClickOutside(aboutMenu, () => {
   line-height: 24px;
 
   color: #667085;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 
 .link:hover span {
-  color: #FF3A31;
+  color: #ff3a31;
+}
+.link .chevron {
+  color: #667085;
+
+  transition: all 0.3s ease;
+}
+.link:hover .chevron {
+  color: #ff3a31;
+  transform: rotate(180deg);
 }
 
 /* Nav Animation */

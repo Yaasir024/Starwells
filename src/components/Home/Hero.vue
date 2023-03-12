@@ -1,5 +1,5 @@
 <template>
-  <section class="hero px-[20px] sm:px-[35px] lg:px-[60px] xl:px-[120px] max-h-[100vh]">
+  <section class="hero px-[20px] sm:px-[35px] lg:px-[60px] xl:px-[120px] max-h-[calc(100vh_+_40px)]">
     <div class="flex justify-between">
       <div class="flex flex-col xl:shrink-0 pt-[102px] md:mr-[87px]">
         <a href="#" target="_blank" rel="noopener noreferrer">
@@ -48,47 +48,112 @@
             Live in <span class="font-medium">4+ African countries</span>
           </p>
           <div class="flex items-center">
-            <img src="@/assets/images/home/flags/1.png" alt="" class="h-[36px] w-[36px] " />
-            <img src="@/assets/images/home/flags/2.png" alt="" class="h-[36px] w-[36px] " />
-            <img src="@/assets/images/home/flags/3.png" alt="" class="h-[36px] w-[36px] " />
+            <img src="@/assets/images/home/flags/1.png" alt="" class="h-[36px] w-[36px]" />
+            <img src="@/assets/images/home/flags/2.png" alt="" class="h-[36px] w-[36px]" />
+            <img src="@/assets/images/home/flags/3.png" alt="" class="h-[36px] w-[36px]" />
             <img src="@/assets/images/home/flags/4.png" alt="" class="h-[36px] w-[36px]" />
           </div>
         </div>
       </div>
-      <div class="hidden xl:flex carousel">
-        <div class="overflow-hidden max-w-[265px] mr-[24px]">
-          <div class="marq">
+      <div class="hidden lg:flex marquee-section  gap-x-[24px]">
+        <div class="marquee marquee--vertical">
+          <div class="marquee__group">
             <img src="@/assets/images/home/animation/01.png" alt="" class="mb-[16px]" />
             <img src="@/assets/images/home/animation/02.png" alt="" class="mb-[18px]" />
             <img src="@/assets/images/home/animation/03.png" alt="" class="mb-[15px]" />
             <img src="@/assets/images/home/animation/04.png" alt="" class="mb-[15px]" />
           </div>
-          <div class="marq">
+          <div aria-hidden="true" class="marquee__group">
             <img src="@/assets/images/home/animation/01.png" alt="" class="mb-[16px]" />
             <img src="@/assets/images/home/animation/02.png" alt="" class="mb-[18px]" />
             <img src="@/assets/images/home/animation/03.png" alt="" class="mb-[15px]" />
             <img src="@/assets/images/home/animation/04.png" alt="" class="mb-[15px]" />
           </div>
         </div>
-        <div class="overflow-hidden max-w-[265px]">
-          <div class="marq2">
+        <div class="marquee marquee--vertical">
+          <div class="marquee__group">
             <img src="@/assets/images/home/animation/05.png" alt="" class="mb-[16px]" />
             <img src="@/assets/images/home/animation/06.png" alt="" class="mb-[18px]" />
             <img src="@/assets/images/home/animation/07.png" alt="" class="mb-[15px]" />
           </div>
-          <div class="marq2">
+          <div aria-hidden="true" class="marquee__group">
             <img src="@/assets/images/home/animation/05.png" alt="" class="mb-[16px]" />
             <img src="@/assets/images/home/animation/06.png" alt="" class="mb-[18px]" />
             <img src="@/assets/images/home/animation/07.png" alt="" class="mb-[15px]" />
           </div>
         </div>
-        <!-- <img src="@/assets/images/home/hero.png" alt="" class="" /> -->
       </div>
     </div>
   </section>
 </template>
 
 <style scoped>
+.marquee-section:hover .marquee__group {
+  animation-play-state: paused;
+}
+.marquee {
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  gap: 12px;
+  mask-image: linear-gradient(
+    var(to bottom, to right),
+    hsl(0 0% 0% / 0),
+    hsl(0 0% 0% / 1) 20%,
+    hsl(0 0% 0% / 1) 80%,
+    hsl(0 0% 0% / 0)
+  );
+}
+.marquee__group {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 12px;
+  min-width: 100%;
+  animation: scroll-x 10s linear infinite;
+  max-width: 265px;
+}
+.marquee__group img{
+  width: 100%;
+}
+
+.marquee--vertical {
+  --mask-direction: to bottom;
+}
+
+.marquee--vertical,
+.marquee--vertical .marquee__group {
+  flex-direction: column;
+}
+
+.marquee--vertical .marquee__group {
+  animation-name: scroll-y;
+}
+
+.marquee--reverse .marquee__group {
+  animation-direction: reverse;
+  animation-delay: -3s;
+}
+
+@keyframes scroll-x {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - 12px));
+  }
+}
+
+@keyframes scroll-y {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(calc(-100% - 12px));
+  }
+}
+
 .carousel:hover .marq {
   animation-play-state: paused;
 }
@@ -96,18 +161,53 @@
   animation-play-state: paused;
 }
 .marq {
-  animation: marquee 8s linear infinite;
+  /* transform: translateZ(0);
+  animation: marquee 8s linear infinite; */
 }
 .marq2 {
-  animation: marquee 10s linear infinite;
+  /* animation: marquee 10s linear infinite; */
+  /* transform: translateY(0%); */
+}
+.marq2a {
+  /* animation: marquee 10s linear infinite; */
+  /* transform: translateY(0%); */
+  animation: move1 2s ease-in-out infinite;
+  animation-delay: 0s;
+}
+.marq2b {
+  /* animation: marquee 10s linear infinite; */
+  /* transform: translateY(0%); */
+  animation: move2 2s ease-in-out infinite;
+  animation-delay: 1s;
+}
+
+@keyframes move1 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(200%);
+  }
+}
+
+@keyframes move2 {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(200%);
+  }
 }
 
 @keyframes marquee {
   0% {
-    transform: translateY(0%);
+    transform: translateY(50%);
+  }
+  50% {
+    transform: translateY(-100%);
   }
   100% {
-    transform: translateY(-100%);
+    transform: translateY(50%);
   }
 }
 .hero {
