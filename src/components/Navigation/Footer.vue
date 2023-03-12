@@ -14,8 +14,8 @@
             <span class="text-alpha-black">Features</span>
           </li>
           <li class="link mb-[8px]">
-            <RouterLink to="/invoice">
-              <span class="text-black">Invoice</span>
+            <RouterLink to="/invoicing">
+              <span class="text-black">Invoicing</span>
             </RouterLink>
           </li>
           <li class="link mb-[8px]">
@@ -61,7 +61,7 @@
             <span class="text-alpha-black">Company</span>
           </li>
           <li class="link mb-[8px]">
-            <RouterLink to="/">
+            <RouterLink to="/about">
               <span class="text-black">About Us</span>
             </RouterLink>
           </li>

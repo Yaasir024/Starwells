@@ -1,25 +1,28 @@
 <template>
   <section class="hero px-[20px] sm:px-[35px] lg:px-[60px] xl:px-[120px]">
     <div class="flex justify-between">
-      <div class="flex flex-col shrink-0 pt-[102px] mr-[87px]">
-        <div class="badge-container px-[10px] py-[6px] flex items-center w-fit">
-          <button
-            class="text-[14px] leading-[20px] font-medium text-main-red tracking-[-0.01em] bg-[#EDEDF1] rounded-[20px] py-1 px-2 mr-[8px]"
-          >
-            Starwells Rebrand
-          </button>
-          <span class="text-[14px] leading-[20px] font-medium text-white tracking-[-0.01em] mr-[10px]"
-            >Learn more</span
-          >
+      <div class="flex flex-col md:shrink-0 pt-[102px] md:mr-[87px]">
+        <a href="#" target="_blank" rel="noopener noreferrer">
+          <div class="badge-container px-[10px] py-[6px] flex items-center w-fit">
+            <button
+              class="text-[14px] leading-[20px] font-medium text-main-red tracking-[-0.01em] bg-[#EDEDF1] rounded-[20px] py-1 px-2 mr-[8px]"
+            >
+              Starwells Rebrand
+            </button>
+            <span
+              class="text-[14px] leading-[20px] font-medium text-white tracking-[-0.01em] mr-[10px]"
+              >Learn more</span
+            >
 
-          <img src="@/assets/icons/arrow-right.svg" alt="" class="" />
-        </div>
+            <img src="@/assets/icons/arrow-right.svg" alt="" class="" />
+          </div>
+        </a>
         <h1
-          class="text-[64px] leading-[72px] tracking-[-0.015em] font-medium text-white font-sharp mt-[24px] max-w-[560px]"
+          class="text-[36px] sm:text-[52px] md:text-[64px] leading-[42px] sm:leading-[58px] md:leading-[72px] tracking-[-0.015em] font-medium text-white font-sharp mt-[24px] max-w-[560px]"
         >
           We make big accounting tasks feel smaller
         </h1>
-        <h2 class="text-[20px] leading-[30px] text-[#E8EAEF] mt-[24px] max-w-[560px]">
+        <h2 class="text-[18px] sm:text-[20px] leading-[26px] sm:leading-[30px] text-[#E8EAEF] mt-[24px] max-w-[560px]">
           Starwells is one-stop accounting software to manage your estimates, invoices, inventory,
           and much more.
         </h2>
@@ -35,8 +38,8 @@
             Register
           </button>
         </div>
-        <div class="mt-[12px] flex items-center">
-          <p class="text-[18px] leading-[29px] text-white">
+        <div class="mt-[12px] flex items-center pb-[100px]">
+          <p class="text-[16px] sm:text-[18px] leading-[24px] sm:leading-[29px] text-white">
             Live in <span class="font-medium">4+ African countries</span>
           </p>
           <div class="flex items-center">
@@ -47,7 +50,7 @@
           </div>
         </div>
       </div>
-      <div class="">
+      <div class="hidden md:block">
         <img src="@/assets/images/home/hero.png" alt="" class="" />
       </div>
     </div>
@@ -56,7 +59,7 @@
 
 <style scoped>
 .hero {
-  background-image: url(./../../assets/images/pricing/hero-bg.png);
+  background-image: url(./../../assets/images/home/hero-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
 }

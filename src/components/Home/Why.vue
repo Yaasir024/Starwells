@@ -17,7 +17,7 @@
     <div class="mt-[84px]">
       <div class="flex flex-wrap">
         <div class="flex-full md:flex-50% px-[12px] mb-[80px]">
-          <div class="card-gradient pt-[48px] pl-[32px] lg:pl-[48px] overflow-hidden">
+          <div class="card-white active pt-[48px] pl-[32px] lg:pl-[48px] overflow-hidden">
             <div class="pr-[32px] mb-[66px]">
               <img
                 src="@/assets/images/home/why/icon-invoice.png"
@@ -117,15 +117,20 @@
   border-radius: 20px;
 }
 
-.card-gradient {
-  background: radial-gradient(137.05% 100% at 50% 0%, #ffddca 5.59%, #fff7cc 44.79%, #ffffff 100%);
-
-  border: 1px solid rgba(47, 43, 67, 0.1);
-  border-radius: 32px;
-}
 .card-white {
   background: #ffffff;
   border: 1px solid rgba(47, 43, 67, 0.1);
   border-radius: 32px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.card-white:hover {
+  transform: scale(1.02);
+  background: radial-gradient(137.05% 100% at 50% 0%, #ffddca 5.59%, #fff7cc 44.79%, #ffffff 100%);
+}
+.card-white.active {
+  background: radial-gradient(137.05% 100% at 50% 0%, #ffddca 5.59%, #fff7cc 44.79%, #ffffff 100%);
 }
 </style>

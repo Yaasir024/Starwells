@@ -2,10 +2,18 @@
 import { ref, onMounted } from 'vue'
 
 import MobileNav from '@/components/Navigation/MobileNav.vue'
+import FeaturesMenu from '@/components/Navigation/FeaturesMenu.vue'
+import AboutMenu from '@/components/Navigation/AboutMenu.vue'
 
 import GradientBtn from '@/components/Buttons/GradientBtn.vue'
 
 const showMobileNav = ref(false)
+
+const showFeaturesMenu = ref(false)
+const featureMenu = ref(null)
+
+const showAboutMenu = ref(false)
+const aboutMenu = ref(null)
 </script>
 
 <template>
@@ -23,21 +31,29 @@ const showMobileNav = ref(false)
               <span class="">Home</span>
             </RouterLink>
           </li>
-          <li class="link mr-[32px]">
-            <RouterLink to="/">
-              <div class="flex items-center">
-                <span class="mr-[13px]">Features</span>
-                <img src="@/assets/icons/dropdown.svg" alt="" class="" />
-              </div>
-            </RouterLink>
+          <li class="link mr-[32px] relative" ref="featureMenu">
+            <div
+              class="flex items-center cursor-pointer"
+              @click="showFeaturesMenu = !showFeaturesMenu"
+            >
+              <span class="mr-[13px]">Features</span>
+              <img src="@/assets/icons/dropdown.svg" alt="" class="" />
+            </div>
+            <transition name="menu">
+              <FeaturesMenu v-if="showFeaturesMenu" @close="showFeaturesMenu = false"  />
+            </transition>
           </li>
-          <li class="link mr-[32px]">
-            <RouterLink to="/about">
-              <div class="flex items-center">
-                <span class="mr-[13px]">About</span>
-                <img src="@/assets/icons/dropdown.svg" alt="" class="" />
-              </div>
-            </RouterLink>
+          <li class="link mr-[32px] relative" ref="aboutMenu">
+            <div
+              class="flex items-center cursor-pointer"
+              @click="showAboutMenu = !showAboutMenu"
+            >
+              <span class="mr-[13px]">About</span>
+              <img src="@/assets/icons/dropdown.svg" alt="" class="" />
+            </div>
+            <transition name="menu">
+              <AboutMenu v-if="showAboutMenu" @close="showAboutMenu = false" />
+            </transition>
           </li>
           <li class="link mr-[32px]">
             <RouterLink to="/pricing">
@@ -96,5 +112,17 @@ const showMobileNav = ref(false)
 .nav-leave-to {
   opacity: 0;
   transform: translateX(100%);
+}
+
+/* Menu Animation */
+.menu-enter-active,
+.menu-leave-active {
+  transition: transform 0.3s ease;
+  transform-origin: top left;
+}
+
+.menu-enter-from,
+.menu-leave-to {
+  transform: scale(0);
 }
 </style>
