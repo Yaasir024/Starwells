@@ -28,26 +28,29 @@
           Starwells is one-stop accounting software to manage your estimates, invoices, inventory,
           and much more.
         </h2>
+
         <div class="email-input flex items-center mt-[60px]">
-          <input
-            type="email"
-            placeholder="Enter your email"
-            class="text-[16px] leading-[24px] text-[#D9D9D9] py-[12px] px-[16px] outline-none w-full"
-          />
-          <button
-            class="register-btn py-[12px] px-[20px] text-white text-[16px] leading-[24px] ml-[16px]"
-          >
-            Register
-          </button>
+          <a href="#" class="block mr-[12px]">
+            <button class="gradient-btn text-white flex items-center">
+              <img src="@/assets/icons/bolt.svg" alt="" class="mr-[14px]" /> Get started
+            </button>
+          </a>
+          <a href="#" class="">
+            <button
+              class="btn-white text-[16px] leading-[24px] text-black py-[12px] px-[16px] bg-white"
+            >
+              Learn more
+            </button>
+          </a>
         </div>
         <div class="mt-[12px] flex items-center pb-[100px]">
           <p class="text-[16px] sm:text-[18px] leading-[24px] sm:leading-[29px] text-white">
             Live in <span class="font-medium">4+ African countries</span>
           </p>
           <div class="flex items-center">
-            <img src="@/assets/images/home/flags/1.png" alt="" class="h-[36px] w-[36px] mr-[2px]" />
-            <img src="@/assets/images/home/flags/2.png" alt="" class="h-[36px] w-[36px] mr-[2px]" />
-            <img src="@/assets/images/home/flags/3.png" alt="" class="h-[36px] w-[36px] mr-[2px]" />
+            <img src="@/assets/images/home/flags/1.png" alt="" class="h-[36px] w-[36px] " />
+            <img src="@/assets/images/home/flags/2.png" alt="" class="h-[36px] w-[36px] " />
+            <img src="@/assets/images/home/flags/3.png" alt="" class="h-[36px] w-[36px] " />
             <img src="@/assets/images/home/flags/4.png" alt="" class="h-[36px] w-[36px]" />
           </div>
         </div>
@@ -129,6 +132,22 @@
 .register-btn {
   background: #131e3a;
   /* Shadow/xs */
+
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 8px;
+}
+.btn-white {
+  border: 1px solid rgba(47, 43, 67, 0.1);
+  box-shadow: 0px 1px 3px rgba(47, 43, 67, 0.1), inset 0px -1px 0px rgba(47, 43, 67, 0.1);
+  border-radius: 12px;
+}
+.gradient-btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+  padding: 10px 18px;
+  background: linear-gradient(90deg, #ff3a31 0.01%, #ffae01 100.01%);
 
   box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
   border-radius: 8px;

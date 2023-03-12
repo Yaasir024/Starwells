@@ -1,11 +1,21 @@
 <script setup>
+import { ref, onMounted } from 'vue'
 const emit = defineEmits(['close'])
+
+const activeMenu = ref('')
+const toggleMenu = (val) => {
+  if (activeMenu.value == '' || val != activeMenu.value) {
+    activeMenu.value = val
+  } else {
+    activeMenu.value = ''
+  }
+}
 </script>
 
 <template>
   <div class="font-sharp fixed top-0 left-0 h-screen w-screen bg-white text-black z-50">
     <div class="h-[64px] border-b px-10 flex items-center justify-between">
-      <RouterLink to="/">
+      <RouterLink to="/" @click="$emit('close')">
         <img src="@/assets/logo/orange.svg" alt="" class="" />
       </RouterLink>
       <button @click="$emit('close')">
@@ -27,34 +37,80 @@ const emit = defineEmits(['close'])
       </button>
     </div>
     <ul class="flex flex-col px-10 pt-[24px]">
-      <li class="link pb-[20px] mb-[20px] border-b">
-        <RouterLink to="/">
+      <li class="link h-[50px] border-b flex items-center">
+        <RouterLink to="/" @click="$emit('close')">
           <span class="">Home</span>
         </RouterLink>
       </li>
-      <li class="link pb-[20px] mb-[20px] border-b">
-        <RouterLink to="/">
-          <div class="flex items-center">
-            <span class="mr-[13px]">Features</span>
-            <img src="@/assets/icons/dropdown.svg" alt="" class="" />
-          </div>
-        </RouterLink>
+      <li class="link border-b">
+        <div
+          class="flex items-center justify-between cursor-pointer h-[50px]"
+          @click="toggleMenu('features')"
+        >
+          <span class="mr-[13px]">Features</span>
+          <img src="@/assets/icons/dropdown.svg" alt="" class="" />
+        </div>
+        <div
+          class="overflow-hidden transition-all duration-200 ease-in"
+          :class="activeMenu == 'features' ? 'max-h-[200px] pb-[24px]' : 'max-h-0'"
+        >
+          <ul class="pl-4">
+            <li class="link mb-[8px]">
+              <RouterLink to="/invoicing" @click="$emit('close')">
+                <span class="text-black">Invoicing</span>
+              </RouterLink>
+            </li>
+            <li class="link mb-[8px]">
+              <RouterLink to="/accounting" @click="$emit('close')">
+                <span class="text-black">Accounting</span>
+              </RouterLink>
+            </li>
+            <li class="link mb-[8px]">
+              <RouterLink to="/book-keeping" @click="$emit('close')">
+                <span class="text-black">Book Keeping</span>
+              </RouterLink>
+            </li>
+          </ul>
+        </div>
       </li>
-      <li class="link pb-[20px] mb-[20px] border-b">
-        <RouterLink to="/about">
-          <div class="flex items-center">
-            <span class="mr-[13px]">About</span>
-            <img src="@/assets/icons/dropdown.svg" alt="" class="" />
-          </div>
-        </RouterLink>
+      <li class="link border-b">
+        <div
+          class="flex items-center justify-between cursor-pointer h-[50px]"
+          @click="toggleMenu('about')"
+        >
+          <span class="mr-[13px]">About</span>
+          <img src="@/assets/icons/dropdown.svg" alt="" class="" />
+        </div>
+        <div
+          class="overflow-hidden transition-all duration-200 ease-in"
+          :class="activeMenu == 'about' ? 'max-h-[200px] pb-[24px]' : 'max-h-0'"
+        >
+          <ul class="pl-4">
+            <li class="link mb-[8px]">
+              <RouterLink to="/about" @click="$emit('close')">
+                <span class="text-black">About Us</span>
+              </RouterLink>
+            </li>
+            <li class="link mb-[8px]">
+              <RouterLink to="/contact-us" @click="$emit('close')">
+                <span class="text-black">Contact</span>
+              </RouterLink>
+            </li>
+            <li class="link mb-[8px]">
+              <RouterLink to="/faq" @click="$emit('close')">
+                <span class="text-black">FAQ</span>
+              </RouterLink>
+            </li>
+          </ul>
+        </div>
       </li>
-      <li class="link pb-[20px] mb-[20px] border-b">
-        <RouterLink to="/pricing">
+      <li class="link h-[50px] border-b flex items-center">
+        <RouterLink to="/pricing" @click="$emit('close')">
           <span class="">Pricing</span>
         </RouterLink>
       </li>
-      <li class="link pb-[20px] mb-[20px] border-b">
-        <RouterLink to="/">
+      <li class="link h-[50px] border-b flex items-center">
+        <RouterLink to="/" @click="$emit('close')">
           <span class="">Partner Program</span>
         </RouterLink>
       </li>
