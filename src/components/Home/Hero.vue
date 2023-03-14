@@ -36,7 +36,7 @@ import WhiteButton from '@/components/Buttons/WhiteButton.vue'
           and much more.
         </h2>
 
-        <div class="email-input flex items-center mt-[60px]">
+        <div class="email-input flex items-center mt-[40px]">
           <div class="mr-[12px]">
             <RouterLink to="/contact-us">
               <GradientBtn text="contact sales" />
