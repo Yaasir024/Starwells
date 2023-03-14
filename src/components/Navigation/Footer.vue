@@ -39,21 +39,6 @@
               <span class="text-black">Pricing</span>
             </RouterLink>
           </li>
-          <li class="link mb-[8px]">
-            <RouterLink to="/">
-              <span class="text-black">Support</span>
-            </RouterLink>
-          </li>
-          <li class="link mb-[8px]">
-            <RouterLink to="/">
-              <span class="text-black">Blog</span>
-            </RouterLink>
-          </li>
-          <li class="link mb-[8px]">
-            <RouterLink to="/">
-              <span class="text-black">Appsumo</span>
-            </RouterLink>
-          </li>
         </ul>
         <!--  -->
         <ul class="mr-[50px] xl:mr-[70px] mb-6 xs:mb-0">
@@ -86,11 +71,6 @@
               <span class="text-black">Terms of Use</span>
             </RouterLink>
           </li>
-          <li class="link mb-[8px]">
-            <RouterLink to="/">
-              <span class="text-black">Privacy</span>
-            </RouterLink>
-          </li>
         </ul>
       </div>
     </div>
@@ -100,7 +80,7 @@
       <p class="text-[16px] leading-[24px] text-alpha-black/60">
         Starwells. All right reserved. © 2023
       </p>
-      <div class="flex items-center">
+      <div class="flex items-center mt-4 sm:mt-0">
         <a href="#" target="_blank" rel="noopener noreferrer" class="mr-[16px]">
           <img src="@/assets/icons/social/facebook.svg" alt="" />
         </a>

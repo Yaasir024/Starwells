@@ -38,7 +38,7 @@
           <p
             class="text-[24px] text-alpha-black leading-[24px] tracking-[-0.01em] mt-[16px] text-center max-w-[380px]"
           >
-          support@starwells.in
+          support@starwells.co
           </p>
         </div>
       </div>
@@ -53,7 +53,7 @@
           <p
             class="text-[24px] text-alpha-black leading-[24px] tracking-[-0.01em] mt-[16px] text-center max-w-[380px]"
           >
-          hello@starwells.in
+          hello@starwells.co
           </p>
         </div>
       </div>

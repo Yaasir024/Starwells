@@ -11,17 +11,17 @@ const accordionData = [
   {
     id: 2,
     question: 'Can we pay offline?',
-    answer: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni, ea!'
+    answer: 'Currently Starwells only accept payment through online mode. We use Stripe and Razorpay.'
   },
   {
     id: 3,
     question: 'Do I get free updates?',
-    answer: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni, ea!'
+    answer: 'Starwells team is working hard to enure you will get the best features in the market to manage your companies need. Starwells provide updates on regularly basis.'
   },
   {
     id: 4,
     question: 'Appsumo life time deal?',
-    answer: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni, ea!'
+    answer: 'Starwells treat as a one year deal. So, you will get one year access if you purchase from appsumo under a lifetime deal.'
   }
 ]
 
