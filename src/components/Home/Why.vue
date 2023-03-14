@@ -15,8 +15,8 @@
       </h2>
     </div>
     <div class="mt-[84px]">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-y-5">
-        <div class="px-[12px] mb-[80px] max-h-[840px] h-full">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-y-[80px]">
+        <div class="px-[12px] md:max-h-[800px] h-full">
           <RouterLink to="/invoicing">
             <div class="card-white active pt-[48px] pl-[32px] lg:pl-[48px] overflow-hidden h-full">
               <div class="pr-[32px] mb-[66px]">
@@ -42,7 +42,7 @@
           </RouterLink>
         </div>
         <!--  -->
-        <div class="px-[12px] mb-[80px] max-h-[840px] h-full">
+        <div class="px-[12px] md:max-h-[800px] h-full">
           <RouterLink to="/accounting">
             <div class="card-white pt-[48px] pl-[32px] lg:pl-[48px] overflow-hidden h-full">
               <div class="pr-[32px] mb-[66px]">
@@ -68,7 +68,7 @@
           </RouterLink>
         </div>
         <!--  -->
-        <div class="px-[12px] mb-[80px] max-h-[640px] h-full">
+        <div class="px-[12px] md:max-h-[640px] h-full">
           <div class="card-white pt-[48px] pl-[32px] lg:pl-[48px] overflow-hidden h-full">
             <div class="pr-[32px] mb-[66px]">
               <img
@@ -91,7 +91,7 @@
           </div>
         </div>
         <!--  -->
-        <div class="px-[12px] mb-[80px] max-h-[640px] h-full">
+        <div class="px-[12px] md:max-h-[640px] h-full">
           <RouterLink to="/book-keeping">
             <div class="card-white pt-[48px] pl-[32px] lg:pl-[48px] overflow-hidden h-full">
               <div class="pr-[32px] mb-[66px]">
