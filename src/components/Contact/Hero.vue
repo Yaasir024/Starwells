@@ -1,6 +1,6 @@
 <template>
   <section class="">
-    <div class="hero pt-[120px] pb-[380px]  px-4">
+    <div class="hero pt-[120px] pb-[240px] sm:pb-[380px]  px-4">
       <div class="flex flex-col items-center px-4">
         <h1 class="text-[32px] sm:text-[50px] md:text-[64px] font-medium font-sharp leading-[40px] sm:leading-[72px] text-center">
           We are here to help
@@ -11,7 +11,7 @@
         </p>
       </div>
     </div>
-    <div class="mt-[-200px] px-[35px] lg:px-[60px] xl:px-[120px] pb-[80px] flex flex-wrap justify-center">
+    <div class="mt-[-200px] px-[24px] sm:px-[35px] lg:px-[60px] xl:px-[120px] pb-[80px] flex flex-wrap justify-center">
       
       <div class="flex-full sm:flex-50% lg:flex-33.33%  px-[12px] mb-6">
         <div class="contact-card flex flex-col items-center justify-center h-[275px]">

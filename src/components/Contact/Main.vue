@@ -15,7 +15,6 @@
               Starwells Limited <br />
               35 King George Road, Onikan, Lagos, Nigeria
             </p>
-            <span class="block mt-[15px]">+91-9760069547</span>
           </h1>
         </div>
         <div class="social flex items-center justify-between">
