@@ -36,7 +36,7 @@
         </div>
       </div>
       <div class="order-1 md:order-2 mb-8 md:mb-0">
-        <img src="@/assets/images/about/detail.png" alt="" class="h-full md:h-auto" />
+        <img src="@/assets/images/about/detail.png" alt="" class="re-img h-full md:h-auto" />
       </div>
     </div>
 
@@ -44,7 +44,7 @@
       <div class="gridbox">
         <div class="box-01 pr-[24px]">
           <div
-            class="bg-[#FF9533] h-full w-full rounded-[22px] px-[45px] py-[24px] flex flex-col justify-between"
+            class="bg-[#FF9533] h-full w-full rounded-[22px] px-[32px] sm:px-[45px] py-[24px] flex flex-col justify-between"
           >
             <h1
               class="text-[70px] lg:text-[115px] leading-[82px] lg:leading-[142px] font-sharp font-medium text-white"
@@ -87,8 +87,24 @@
         </div>
         <div class="box-04">
           <div
-            class="bg-red-dark h-full w-full rounded-b-[22px] pb-[20px] sm:py-[38px] px-[14px] flex flex-col justify-end sm:items-center"
+            class="bg-red-dark h-full w-full rounded-b-[22px] pb-[20px] sm:py-[38px] px-[32px] sm:px-[14px] flex flex-col justify-end sm:items-center"
           >
+            <h3
+              class="text-[20px] lg:text-[24px] leading-[26px] lg:leading-[30px] font-sharp text-[#FF8B54] max-w-[260px]"
+            >
+              Satisfaction rate from our customers.
+            </h3>
+          </div>
+        </div>
+        <div class="box-05 pt-[24px] pr-[24px] hidden">
+          <div
+            class="bg-red-dark h-full w-full rounded-[22px] px-[32px] py-[20px] flex flex-col justify-between"
+          >
+            <h1
+              class="text-[70px] lg:text-[115px] leading-[82px] lg:leading-[132px] font-sharp font-medium text-[#FF8B54]"
+            >
+            92%
+            </h1>
             <h3
               class="text-[20px] lg:text-[24px] leading-[26px] lg:leading-[30px] font-sharp text-[#FF8B54] max-w-[260px]"
             >
@@ -114,6 +130,7 @@
 .gridbox .box-02 {
   grid-column: 5 / -1;
   grid-row: 1 / span 2;
+  display: block;
 }
 .gridbox .box-03 {
   grid-column: 5 / span 3;
@@ -122,9 +139,16 @@
 .gridbox .box-04 {
   grid-column: 8 / -1;
   grid-row: 3 / -1;
+  display: block;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 768px) {
+  .re-img {
+    max-height: 390px;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+  }
   .gridbox {
     grid-template-rows: repeat(9, 90px);
   }
@@ -147,22 +171,29 @@
 }
 @media screen and (max-width: 640px) {
   .gridbox {
-    grid-template-rows: repeat(7, 90px);
+    grid-template-rows: repeat(9, 90px);
   }
   .gridbox .box-01 {
     grid-row: 1 / span 3;
   }
   .gridbox .box-02 {
     grid-column: 1 / -1;
-    grid-row: 6 / span 1;
+    grid-row: 7 / span 1;
+    display: none;
   }
   .gridbox .box-03 {
     grid-column: 1 / -1;
-    grid-row: 4 / span 2;
+    grid-row: 4 / span 3;
   }
   .gridbox .box-04 {
     grid-column: 1 / -1;
-    grid-row: 7 / span 1;
+    grid-row: 8 / span 1;
+    display: none;
+  }
+  .gridbox .box-05 {
+    display: block;
+    grid-column: 1 / -1;
+    grid-row: 7 / span 3;
   }
 }
 </style>

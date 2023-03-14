@@ -11,22 +11,8 @@
         </p>
       </div>
     </div>
-    <div class="mt-[-200px] px-[35px] lg:px-[60px] xl:px-[120px] pb-[80px] flex flex-wrap">
-      <div class="flex-full sm:flex-50% lg:flex-33.33%  px-[12px] mb-6">
-        <div class="contact-card flex flex-col items-center justify-center h-[275px]">
-          <img src="@/assets/icons/contact-us/customer-service.svg" alt="" class="h-[48px] w-[48px]" />
-          <h1
-            class="text-[24px] text-primary-900 leading-[28px] tracking-[-0.014em] font-semibold mt-[26px] text-center"
-          >
-          Call us
-          </h1>
-          <p
-            class="text-[24px] text-alpha-black leading-[24px] tracking-[-0.01em] mt-[16px] text-center max-w-[380px]"
-          >
-          +91-9760069547
-          </p>
-        </div>
-      </div>
+    <div class="mt-[-200px] px-[35px] lg:px-[60px] xl:px-[120px] pb-[80px] flex flex-wrap justify-center">
+      
       <div class="flex-full sm:flex-50% lg:flex-33.33%  px-[12px] mb-6">
         <div class="contact-card flex flex-col items-center justify-center h-[275px]">
           <img src="@/assets/icons/contact-us/mail-star.svg" alt="" class="h-[48px] w-[48px]" />
