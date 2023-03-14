@@ -1,7 +1,7 @@
 <template>
   <section class="hero pt-[144px] pb-[30px] px-4">
     <div class="flex flex-col items-center">
-      <div class="">
+      <div class="flex flex-col items-center">
         <h1 class="text-[50px] md:text-[64px] font-medium font-sharp leading-[72px] text-center">
           Pricing & Plans
         </h1>
@@ -30,7 +30,7 @@
 <style scoped>
 .hero {
   /* background-image: url(./../../assets/images/pricing/hero-bg.png); */
-  background-image: url(./../../../public/images/hero/pricing.svg);
+  background-image: url(./../../../images/hero/pricing.svg);
   background-repeat: no-repeat;
   background-size: cover;
 }

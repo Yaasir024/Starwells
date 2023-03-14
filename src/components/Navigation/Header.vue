@@ -107,8 +107,8 @@ useClickOutside(aboutMenu, () => {
         </RouterLink>
       </div>
       <div class="hidden lg:block">
-        <RouterLink to="/">
-          <GradientBtn text="Register" />
+        <RouterLink to="/contact-us">
+          <GradientBtn text="contact sales" />
         </RouterLink>
       </div>
       <div class="block lg:hidden cursor-pointer">

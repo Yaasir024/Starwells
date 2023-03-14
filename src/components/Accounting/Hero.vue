@@ -1,3 +1,8 @@
+<script setup>
+import GradientBtn from '@/components/Buttons/GradientBtn.vue'
+import WhiteButton from '@/components/Buttons/WhiteButton.vue'
+</script>
+
 <template>
   <section class="flex bg-[#FAFFD9]">
     <div
@@ -14,19 +19,23 @@
         >
           Accounting automation that just makes sense
         </h2>
-        <h4 class="text-[18px] sm:text-[20px] leading-[26px] sm:leading-[30px] text-dark mt-[24px] max-w-[560px]">
+        <h4
+          class="text-[18px] sm:text-[20px] leading-[26px] sm:leading-[30px] text-dark mt-[24px] max-w-[560px]"
+        >
           You can easily automate VAT extraction, expense account allocation, and receipt
           reconciliation, to reduce the time and effort required for month-end closing processes.
         </h4>
         <div class="mt-[36px] flex items-center">
-          <button class="gradient-btn text-white mr-[12px] flex items-center">
-            <img src="@/assets/icons/bolt.svg" alt="" class="mr-[14px]" /> Get started
-          </button>
-          <button
-            class="btn-white text-[16px] leading-[24px] text-black py-[12px] px-[16px] bg-white"
-          >
-            Learn more
-          </button>
+          <div class="mr-[12px]">
+            <RouterLink to="/contact-us">
+              <GradientBtn text="contact sales" />
+            </RouterLink>
+          </div>
+          <div class="">
+            <RouterLink to="/about">
+              <WhiteButton text="learn more" />
+            </RouterLink>
+          </div>
         </div>
       </div>
     </div>

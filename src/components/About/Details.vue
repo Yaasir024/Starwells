@@ -49,12 +49,12 @@
             <h1
               class="text-[70px] lg:text-[115px] leading-[82px] lg:leading-[142px] font-sharp font-medium text-white"
             >
-              2021
+              2012
             </h1>
             <h3
               class="text-[20px] lg:text-[24px] leading-[26px] lg:leading-[36px] font-sharp text-white max-w-[200px]"
             >
-              Founded in Delhi, India
+              Founded in London, UK
             </h3>
           </div>
         </div>

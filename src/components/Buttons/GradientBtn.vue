@@ -3,7 +3,7 @@ const props = defineProps(['text'])
 </script>
 
 <template>
-  <button class="btn text-white">{{ text }}</button>
+  <button class="btn text-white text-[16px] leading-[24px] capitalize hover:scale-105 transition-all duration-150 ease-in-out">{{ text }}</button>
 </template>
 
 <style scoped>

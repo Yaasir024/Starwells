@@ -30,7 +30,7 @@
 <style scoped>
 .hero {
   /* background-image: url(./../../assets/images/about/hero-bg.png); */
-  background-image: url(./../../../public/images/hero/about.svg);
+  background-image: url(./../../../images/hero/about.svg);
   background-repeat: no-repeat;
   background-size: cover;
 }

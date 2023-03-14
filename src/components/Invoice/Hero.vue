@@ -1,6 +1,13 @@
+<script setup>
+import GradientBtn from '@/components/Buttons/GradientBtn.vue'
+import WhiteButton from '@/components/Buttons/WhiteButton.vue'
+</script>
+
 <template>
-  <section class="flex bg-[#FFEDD9] ">
-    <div class="flex-full lg:flex-50% pl-[20px] sm:pl-[35px] lg:pl-[60px] xl:pl-[120px] pt-[102px] pb-[70px] pr-[20px] sm:pr-[35px] lg:pr-[90px]">
+  <section class="flex bg-[#FFEDD9]">
+    <div
+      class="flex-full lg:flex-50% pl-[20px] sm:pl-[35px] lg:pl-[60px] xl:pl-[120px] pt-[102px] pb-[70px] pr-[20px] sm:pr-[35px] lg:pr-[90px]"
+    >
       <div class="">
         <div class="badge w-fit">
           <button class="bg-[#EDEDF1] px-[8px] rounded-[20px]">
@@ -12,24 +19,28 @@
         >
           Get paid faster with Starwells
         </h2>
-        <h4 class="text-[18px] sm:text-[20px] leading-[26px] sm:leading-[30px] text-dark mt-[24px] max-w-[560px]">
+        <h4
+          class="text-[18px] sm:text-[20px] leading-[26px] sm:leading-[30px] text-dark mt-[24px] max-w-[560px]"
+        >
           Starwells provide the benefits of a full billing and accounting solution to small and
           medium businesses.
         </h4>
         <div class="mt-[36px] flex items-center">
-          <button class="gradient-btn text-white mr-[12px] flex items-center">
-            <img src="@/assets/icons/bolt.svg" alt="" class="mr-[14px]" /> Get started
-          </button>
-          <button
-            class="btn-white text-[16px] leading-[24px] text-black py-[12px] px-[16px] bg-white"
-          >
-            Learn more
-          </button>
+          <div class="mr-[12px]">
+            <RouterLink to="/contact-us">
+              <GradientBtn text="contact sales" />
+            </RouterLink>
+          </div>
+          <div class="">
+            <RouterLink to="/about">
+              <WhiteButton text="learn more" />
+            </RouterLink>
+          </div>
         </div>
       </div>
     </div>
     <div class="hidden lg:block flex-50%">
-        <img src="@/assets/images/invoice/hero.png" alt="" class="" />
+      <img src="@/assets/images/invoice/hero.png" alt="" class="" />
     </div>
   </section>
 </template>

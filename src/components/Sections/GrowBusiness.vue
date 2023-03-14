@@ -11,7 +11,10 @@
           From online to on-the-go, we have dedicated methods for every type of operational
           accounting. And it’s all tracked and managed in our powerful clou software
         </h3>
-        <button class="btn text-white mt-[44px]">Get Started</button>
+        <RouterLink to="/contact-us">
+
+          <button class="btn text-white mt-[44px] hover:scale-105 transition-all duration-150 ease-in-out">Contact Sales</button>
+        </RouterLink>
       </div>
       <!-- REFACTOR -->
       <div class="hidden md:block">

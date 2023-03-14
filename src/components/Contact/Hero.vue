@@ -1,7 +1,7 @@
 <template>
   <section class="">
-    <div class="hero pt-[120px] pb-[380px] flex flex-col items-center px-4">
-      <div class="px-4">
+    <div class="hero pt-[120px] pb-[380px]  px-4">
+      <div class="flex flex-col items-center px-4">
         <h1 class="text-[32px] sm:text-[50px] md:text-[64px] font-medium font-sharp leading-[40px] sm:leading-[72px] text-center">
           We are here to help
         </h1>
@@ -64,7 +64,7 @@
 <style scoped>
 .hero {
   /* background-image: url(./../../assets/images/contact/hero-bg.png); */
-  background-image: url(./../../../public/images/hero/contact.svg);
+  background-image: url(./../../../images/hero/contact.svg);
   background-repeat: no-repeat;
   background-size: cover;
 }
