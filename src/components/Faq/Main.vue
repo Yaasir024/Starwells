@@ -42,7 +42,7 @@ const toggleAccordion = (id) => {
         v-for="data in accordionData"
         :key="data.id"
       >
-        <div class="flex items-center justify-between h-[50px]" @click="toggleAccordion(data.id)">
+        <div class="flex items-center justify-between h-[50px] cursor-pointer" @click="toggleAccordion(data.id)">
           <h2 class="text-[24px] leading-[30px] text-gray-900">{{ data.question }}</h2>
           <button class="">
             <img src="@/assets/icons/minus.svg" alt="" class="" v-if="activeAccordion == data.id"/>
