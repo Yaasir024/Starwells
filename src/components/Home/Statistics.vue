@@ -1,6 +1,6 @@
 <template>
   <section
-    class="bg-[#F1E2D0] pt-[48px] px-[20px] sm:px-[35px] lg:px-[55px] xl:px-[240px] pb-[120px]"
+    class="bg-[#F1E2D0] pt-[48px]  px-[20px] sm:px-[35px] lg:px-[160px] xl:px-[240px] pb-[120px]"
   >
     <div class="mb-[32px]">
       <h2
