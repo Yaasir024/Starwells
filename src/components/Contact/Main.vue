@@ -34,7 +34,7 @@
           <img
             src="@/assets/icons/contact-us/arrow.svg"
             alt=""
-            class="absolute top-[-16px] left-[-22px] z-30"
+            class="absolute top-[-16px] left-[-16px] sm:left-[-22px] z-30"
           />
           <img src="@/assets/images/contact/01.png" alt="" class="" />
         </div>
