@@ -106,9 +106,9 @@ const prevSlide = () => {
                 <h1
                   class="text-[16px] sm:text-[18px] md:text-[20px] lg:text-[24px] leading-[20px] sm:leading-[28px] md:leading-[30px] lg:leading-[34px] text-white max-w-[670px] mt-[30px]"
                 >
-                  When demoing Starwells, we were immediately taken by the AI capabilities and the
-                  look and feel of the platform. After implementation, we understood that without
-                  Trullion,
+                  Upon seeing Starwells, we were instantly impressed by the AI capabilities and the
+                  platform's aesthetics. After we onboarded, we realized that performing our tasks
+                  without Starwells would be exceedingly challenging
                 </h1>
                 <div class="mt-[31px]">
                   <h1 class="gradient-text text-[25px] leading-[25px] font-sharp">Jeremy Fofana</h1>
